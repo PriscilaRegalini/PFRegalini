@@ -2,11 +2,9 @@
 
 *{
 font-family: 'Josefin Sans', sans-serif;
-/* font-family: 'Nothing You Could Do', sans-serif; */
-/* padding: 0;
-margin: 0; */
 box-sizing: border-box;
 color: #383838;
+box-sizing: border-box;
 }
 h1{
     font-family: 'Delicious Handrawn', sans-serif;
@@ -18,26 +16,13 @@ h2{
 }
 h3{
     text-align: center;
-    margin-top: 20px;
-    padding: 10px 30px;
+    margin-top: 40px;
 }
 
 p{
   font-size: 1.2em;
   line-height: 1.5em;
 }
-
-/* .nav-link{
-    font-size: 1.3em;
-} */
-/* .button{
-    color: #676565;
-    }
-    
-    .button:hover{
-    color: black;
-    
-    } */
 
 /* BG */
 .bg-piel{
@@ -72,7 +57,6 @@ p{
 
 #centro{
 	grid-area: centro; 
-    /* background-color: #fbf4f2;  */ 
 }
 
 #presentacion{
@@ -143,20 +127,21 @@ nav img{
             width: 200px;
         }
 
-/* MAIN */
+
+/* MAIN TRABAJO */
 .contenedor-tarjeta{
     display: flex;
     flex-direction: row;
+    justify-content:space-around;
     width: 98%;
-    margin: 17px;
-    margin-bottom: 50px; 
-    margin-left: 10px;  
+    margin: 15px;
+    margin-bottom: 50px;   
 }
 
 .tarjeta{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 90%;
     justify-content: center;
     margin: 10px;
     border-radius: 7px;
@@ -169,8 +154,10 @@ nav img{
     border-top-right-radius: 7px;
     }
     .tarjeta p{
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 10px;
         padding: 10px;
+        line-height:2em;
         
     }
     .tarjeta a{
@@ -188,12 +175,53 @@ nav img{
         color: #383838;
     }
 
-    .tarjeta h4{
+    .tarjeta h3{
+        font-size: 1.2em;
         padding: 10px;
         background-color: #fdf0ed;
         border-top-right-radius: 7px;
         border-top-left-radius: 7px;
     }
+    .tarjeta h2{
+        font-size: 1.5em;
+        padding:0px;
+        margin: 10px;
+    }
+    .tarjeta p{
+        margin-left: 10px;
+        width: 90%;
+        padding: 0px;
+        font-size: 1.2em;
+    }
+    .card-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+        .card-footer a{
+            text-decoration: none;
+            color: #585859;
+            font-size: 1.1em;
+        }
+        .card-footer a:hover{
+            color: #383838;
+        }
+        .card-footer{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+        }
+/* MAIN SOBRE MI */
+        .tarjeta .h2-sobreMi{
+            font-size: 1.5em;
+            margin: 0px;
+            padding: 10px;
+            background-color: #fdf0ed;
+            border-top-right-radius: 7px;
+            border-top-left-radius: 7px;
+        }
+
+
 /* CONTACTO */
 .contenedor-contacto{
     width: 100%;
@@ -248,9 +276,24 @@ footer ul {
             fill: white;
         }
         footer svg:hover{ 
-            fill:#747373;
-            
+            fill:#747373;  
          }
+         footer img{ 
+            margin-right: 40px;
+            width: 30px;
+             fill: white;
+         }
+         footer img:hover{ 
+             fill:#747373;  
+          }
+          footer ul li{
+            font-size: 1.2em;
+            color: white;
+          }
+            footer ul li img{
+                margin-left: 5px;
+            }
+         
 
    
 
@@ -272,16 +315,16 @@ header{
 }
 
 main{
-    width: 90%;
+    width: 100%;
 }
+
 .contenedor-tarjeta{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 90%;
-/*     margin: 17px;
-    margin-bottom: 50px;   */ 
+    margin: 20px;
 }
 
     .tarjeta{
@@ -291,27 +334,10 @@ main{
         justify-content: center;
         margin: 10px;
         border-radius: 7px;
-        border: #fdf0ed solid 1px;
-        margin-left: 10px;     
+        border: #fdf0ed solid 1px;  
     }
-
 }
 
-@media (min-width: 500px) and (max-width: 700px) {
+
+
   
-    .contenedor-tarjeta{
-        margin-left: 30px; 
-    }
-}
-@media (min-width: 680px) and (max-width: 700px) {
-  
-    .contenedor-tarjeta{ 
-        margin-left: 30px; 
-    }
-}
-@media (min-width: 420px) and (max-width: 550px) {
-  
-    .contenedor-tarjeta{ 
-        margin-left: 22px; 
-    }
-}
