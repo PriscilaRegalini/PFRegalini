@@ -1,5 +1,13 @@
 {
-  "dependencies": {
-    "sass": "^1.62.0"
-  }
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "proyecto Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch scss/style.scss  css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
 }
