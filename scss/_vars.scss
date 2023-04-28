@@ -1,0 +1,58 @@
+//colores
+
+$color1:#f3dbd6;
+$color2:#fdf0ed;
+$color8:#dedcdc;
+$color6:#d5d5d5;
+$color9:white;
+$color3:#747373;
+$color7:#585859;
+$color4:#383838;
+$color5:black;
+
+$colores:(
+    'uno': #f3dbd6,
+    'dos': #fdf0ed,
+    'tres':#dedcdc,
+    'cuatro':#d5d5d5,
+    'cinco':white,
+    'seis':#747373,
+    'siete':#585859,
+    'ocho':#383838,
+    'nueve':black,
+   
+);
+
+
+
+//fonts
+$fontPrincipal: 'Josefin Sans', sans-serif;
+$fontSecundaria: 'Delicious Handrawn', sans-serif;
+
+//sizing
+$textMini:0.5em;
+$textSxx:0.8em;
+$textSx: 1.1em;
+$textSm: 1.2em;
+$textMd: 1.5em;
+$textLg: 2em;
+$textXl: 3em;
+
+//font weight
+$fontLight:100;
+$fontRegular:400;
+$fontBold:600;
+
+//button
+$border5: 5px;
+$border7: 7px;
+$border10: 10px;
+$border20: 20px;
+
+//width
+
+$width100: 100%;
+$width98: 98%;
+$width95: 95%;
+$width90: 90%;
+$width50: 50%;

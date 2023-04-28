@@ -1,0 +1,248 @@
+
+@media (max-width: 800px){
+
+    // GENERALES
+.grid{
+    width:100%;
+    display: grid;
+ }
+
+.areas{
+     grid-template-columns: 100vw;
+     grid-template-rows: auto;
+     grid-template-areas: 
+     "botonera" 
+     "presentacion " 
+     "centro"
+     "pie";
+ }
+   
+
+body{
+    margin: -28px; 
+    header{
+        width: 90%;
+        margin-left: 44px; }
+    nav{
+        width: 100%;
+        margin-top: 14px;
+        margin-left: 14px;}
+    footer{
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 28px;}
+    main{
+        margin-left: 15px;}     
+}
+
+
+    .tarjeta{
+        @include contenedor(900px, auto, 10px, none, #fdf0ed solid 1px, flex, column, none, none);
+        margin-left: -30px;
+    } 
+    //INDEX
+
+    h2{
+        @include  texto($fontPrincipal, $textSm, $fontRegular, none, black, center );
+        margin-top: 30px
+    }
+    .contenedorTestimonios{
+        @include contenedor(94%, auto, 3px, 8px, 0px, flex, row, center, center);
+        margin-left: 9px;
+        margin-bottom: 20px;
+        .testimonios{
+            width: $width100;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: map-get($map: $colores, $key:'once' );
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .h2Testimonios{
+            font-size: $textMd;
+        }
+        .textoTestimonios{
+            font-style: italic;
+            font-size: $textSxx;
+            font-weight: $fontLight;
+            margin-top: 15px;
+        }
+        .svgDecoracionAzul{
+            background-color: map-get($map: $colores, $key:'seis' );
+            border-radius: 35px;
+            padding: 5px;
+            stroke: map-get($map:$colores , $key:'once' );
+            margin-bottom: -20px;
+        
+        }
+    }
+
+    .card{
+        font-family: $fontPrincipal;
+        margin-left: 3px;
+        h5{
+            font-size: $textSxx;
+            margin-top: 5px;
+            
+        }
+        .card-footer{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            a{
+                text-decoration: none;
+                color: #585859;
+                font-size: 1.1em;
+                &:hover{
+                    color: #383838;
+                }
+            }
+        }       
+    }
+        //FIN INDEX
+
+        // CONTACTO 
+    .contenedor-contacto{
+        @include contenedor($width100, auto, 0px, 0px, none, flex, column, center, none);
+
+        font-family: $fontPrincipal;
+        align-items: center;
+        border-radius: 7px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        margin-left:30px;
+
+        .form-control{
+            border: #f3dbd6 solid 1px; 
+            width: 300px;           
+        }
+        button{
+            background-color:#fdf0ed ;
+            color: #747373;
+            border: #f3dbd6 solid 1px;
+            &:hover{
+                background-color:#f3dbd6 ;
+                color: #747373;
+                border: #f3dbd6 solid 1px;
+            }
+        }
+        .form-control:focus{
+            box-shadow: none !important;
+            background-color: #fdf0ed;
+        }       
+    }
+
+    //FIN CONTACTO
+
+    // SOBRE MI - HERRAMIENTAS
+        .presentacionHerramientas{
+            @extend .presentacion;
+            border: none !important;
+        
+            .animateSobreMi{
+                @include contenedor(280px, 60px, auto, 0, 0, flex, column, none, none);
+        
+                @include texto($fontPrincipal, none, $fontRegular, $textLg,black, none);
+        
+                overflow: hidden;
+        
+                .cambiar{
+                    list-style: none;
+                    margin-left: -54px;
+                    animation: animateHerramientas 15s infinite;
+                    .titulo{
+                    
+                        font-size: $textSm;
+                        font-family: $fontSecundaria;
+                        padding: 20px;
+                    }
+                    .herramientas{
+                        
+                        font-size: $textMini;
+                        font-family: $fontPrincipal;
+                        
+                    }
+                }
+            }
+        }
+        //ANIMACION
+        @keyframes animateHerramientas{
+            0%{margin-top: 10px;}
+            20%{margin-top: 0;}
+        
+            25%{margin-top: -63px;}
+            50%{margin-top: -63px;}
+        
+            55%{margin-top: -120px;}
+            80%{margin-top: -120px;}
+        
+            85%{margin-top: -63px;}
+            95%{margin-top: -63px;}
+        
+            100%{margin-top: 0;}
+        }
+        
+        .animateSobreMi{
+            animation-name: animateSobreMi;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .herramientas{
+   
+            width: 97% !important;
+            border-radius: 10px;
+          
+            svg{
+                width: 6%;
+                margin: 21px !important;
+            }
+         }
+    }
+    
+    //SOBRE MI  - ESTUDIOS
+    .estudios{
+        padding: 10px;
+        margin-left: 25px;
+    }
+
+
+    //MEDIAS PARA RETOQUES
+@media (min-width: 801px){
+
+    .tarjeta{
+        @include contenedor(45%, auto, 10px, none, #fdf0ed solid 1px, flex, column, none, none);
+        margin-left: 10px;
+
+    }
+
+    //HERRAMIENTAS
+.herramientas{
+   
+        width: 97% !important;
+        border-radius: 10px;
+        h2{
+            font-family: $fontPrincipal;
+            font-size: $textSm;
+            margin-bottom: 30px;
+        }
+        svg{
+            width: 5%;
+        }
+    
+    }
+
+
+}
+
+
+@media (min-width: 802px) and (max-width: 1000px){
+
+    .tarjeta{
+        @include contenedor(100%, auto, 10px, none, #fdf0ed solid 1px, flex, column, none, none);
+       margin-left: -20px;
+    }
+  
+}

@@ -1,0 +1,38 @@
+
+@mixin contenedor($width, $heigth, $margin, $padding, $border, $display, $flex-direction, $justify-content, $align-items){
+    width: $width;
+    height: $heigth;
+    margin: $margin;
+    padding: $padding;
+    border: $border;
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content:$justify-content;
+    $align-items:$align-items;
+    @if $align-items == center{text-align: center}
+    @else if $align-items == right {text-align: right}
+    @else if $align-items == left {text-align: left;}
+
+    @if $justify-content == center{justify-content: center}
+    @else if $justify-content == start {justify-content: start}
+    @else if $justify-content == end {justify-content: end}
+    @else if $justify-content == left {justify-content: left}
+    @else if $justify-content == right {justify-content: right}
+    @else if $justify-content == space-evenly {justify-content: space-evenly;}
+    @else if $justify-content == space-around {justify-content:space-around}
+    @else if $justify-content == space-between {justify-content:space-between;}
+}
+
+
+@mixin texto($font-family, $font-size, $font-weight, $line-height, $color, $text-align){
+     font-family:$font-family;
+     font-size:$font-size;
+     font-weight:$font-weight;
+     line-height: $font-size;
+     color:$color;
+     text-align:$text-align;
+
+     @if $text-align == center{text-align: center}
+     @else if $text-align == right {text-align: right}
+     @else if $text-align == left {text-align: left;}
+}

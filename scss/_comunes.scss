@@ -1,0 +1,240 @@
+
+.mainIndex{
+    width: $width98;
+}
+main{
+    width: $width95;
+}
+body{
+    width: $width100;
+}
+
+h1{
+
+    @include  texto($fontPrincipal, $textMd, $fontLight, none, black, center );
+   
+    span{
+        @include  texto($fontSecundaria, $textMd,$fontBold, none,  black, center);
+
+    }
+}
+h2{
+    @include  texto($fontPrincipal, $textMd, $fontRegular, none, black, center );
+    margin-top: 30px
+}
+h3{
+    @include  texto($fontPrincipal, $textSm, $fontBold, none, black, none );
+
+    margin-top: 10px;
+}
+h4{
+    @include  texto($fontPrincipal, $textSxx, $fontLight, none, black, none );
+    margin-top: 10px;
+
+}
+
+p{ 
+    @include  texto($fontPrincipal, $textSm,$fontRegular, $textMd, black, none );
+
+  font-family:$fontPrincipal;
+  font-size: $textSm;
+  line-height: 1.5em;
+}
+
+
+//bg
+
+
+
+
+.bgRosa{
+    background-color: map-get($map: $colores, $key:'uno' );
+}
+.bgRosaClaro{
+    background-color: map-get($map: $colores, $key:'dos' );
+}
+.bgVerdeAgua{
+    background-color: map-get($map: $colores, $key:'trece' );
+}
+.bgAzul{
+    background-color: map-get($map: $colores, $key:'once' );
+}
+.bordes{
+    border: map-get($map: $colores, $key:'dos' ) solid 1px;
+}
+
+//GRID
+.grid{
+	width:100%;
+	display: grid;
+}
+#botonera{
+	grid-area: botonera;
+}
+
+#centro{
+	grid-area: centro; 
+}
+
+#presentacion{
+	grid-area: presentacion;
+}
+
+#pie{
+	grid-area: pie;
+}
+
+.areas{
+	grid-template-columns: 20vw 60vw 20vw;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"botonera botonera botonera" 
+	". presentacion ." 
+    "centro centro centro"
+	"pie pie pie";
+} 
+
+//HEADER
+
+header {
+    .presentacion{
+        @include contenedor( $width100, auto, none, 30px, none, flex, column, center, center);  
+
+        text-decoration: none;
+        border: #747373 solid 1.5px;
+        border-radius: 20px;
+        margin-top: 30px;
+   
+        .corazon{
+            margin-bottom: 10px;
+            width: 50px;
+        }
+        .svgDecoracionRosa{
+            background-color: map-get($map: $colores, $key:'seis' );
+            border-radius: 35px;
+            padding: 5px;
+            stroke: map-get($map:$colores , $key:'uno' );
+            margin-bottom: -20px;
+            align-items: center; 
+
+        }
+       
+    }
+    .ilustracion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #d5d5d5 solid 0.5px;
+        img{
+            padding-top: 10px;
+            width: 200px;
+        }
+    }
+    
+}
+
+//INDEX
+.carousel-inner{
+    width: 98%;
+   
+}
+
+//INDEX - HEADER
+.muestras{
+    @include contenedor($width100, auto, 20px, 0px, none, flex, row, center, center); 
+    margin-top: 70px;  
+    
+    .svgDecoracionRosa{
+        background-color: map-get($map: $colores, $key:'dos' );
+        border-radius: 35px;
+        padding: 5px;
+        stroke: map-get($map:$colores , $key:'seis' );
+        margin-bottom: -15px;
+        margin-left: -30px;
+    }
+}
+ 
+// TESTIMONIOS INDEX Y SOBRE MI
+.contenedorTestimonios{
+    @include contenedor(98%, auto, 3px, 8px, 0px, flex, row, center, center);
+    margin-left: 9px;
+    margin-bottom: 20px;
+
+    .testimonios{
+        width: $width100;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: map-get($map: $colores, $key:'once' );
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .h2Testimonios{
+        @extend h2;
+        font-family: $fontSecundaria;
+        font-size: $textLg;
+    }
+    .textoTestimonios{
+        font-style: italic;
+        font-weight: $fontLight;
+        margin-top: 15px;
+    }
+    .svgDecoracionAzul{
+        background-color: map-get($map: $colores, $key:'seis' );
+        border-radius: 35px;
+        padding: 5px;
+        stroke: map-get($map:$colores , $key:'once' );
+        margin-bottom: -20px;
+    
+    }
+   
+}
+
+
+
+
+//PIE
+
+footer{
+    font-family: $fontPrincipal;
+    img{ 
+        margin-right: 40px;
+        width: 30px;
+         fill: white;
+         &:hover{ 
+            fill:#747373;  
+         }
+     }
+     ul {
+      
+        background-color: #dedcdc ;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        li{
+            font-size: 1.2em;
+            color: white;
+            display: flex; 
+            flex-direction: row;
+            text-decoration: none;   
+            padding: 10px;
+            margin: 10px;
+            a img{
+                margin-left: 5px;
+                fill:#383838;
+                }
+                svg{ 
+                    margin-left: 10px;
+                    width: 30px;
+                     fill: map-get($map: $colores, $key:'tres' );
+                     &:hover{ 
+                        fill:white;  
+                     }
+                 }
+            
+        }
+    }
+
+}
