@@ -20,39 +20,16 @@ nav{
         border: none;
         margin: 5px; 
         span:hover{
-            color: black;
+            color: map-get($map: $colores, $key:'diez' );
         }
     }
-
+    .corazonNav{
+        width: 60px;
+    }
     
 
 } 
 
-/* nav {
-    font-family: $fontPrincipal;
-    img{
-        padding: 10px;
-        margin-left: 20px;
-        width: 2%;}
-        .navbar-toggler{
-            border: none !important;
-            &:focus{
-                box-shadow: none !important ;
-            }
-        }
-
-        .boton-hamburguesa{
-            background-color: none !important;
-            color: #2F67B2;
-            border: none;
-            margin: 5px; 
-            .boton-hamburguesa span:hover{
-                color: black;
-            }
-            
-        }  
-
-} */
 
 
 

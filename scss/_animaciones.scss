@@ -32,21 +32,45 @@
 	0%{margin-top: 10px;}
 	20%{margin-top: 0;}
 
-	25%{margin-top: -52px;}
-    50%{margin-top: -52px;}
+	25%{margin-top: -45px;}
+    50%{margin-top: -45px;}
 
     55%{margin-top: -100px;}
     80%{margin-top: -100px;}
 
-    85%{margin-top: -53px;}
-    95%{margin-top: -53px;}
+    85%{margin-top: -45px;}
+    95%{margin-top: -45px;}
 
     100%{margin-top: 0;}
 }
 
 .animateSobreMi{
 	animation-name: animateSobreMi;
-	animation-duration: 5s;
+	animation-duration: 60s;
 	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes animateTestimonio{
+	0%{opacity:0.5}
+	25%{opacity:0.7}
+    50%{opacity:1}
+    75%{opacity:0.7}
+    100%{opacity:0.5}
+}
+
+
+
+//prueba
+
+@keyframes animateCorazon{
+	0%{width: 0px;}
+    25%{opacity:1}
+    50%{width: 30px;}
+    
+}
+.animateCuriosidad{
+	animation-name: animateCorazon;
+	animation-duration: 2s;
 	animation-timing-function: linear;
 }

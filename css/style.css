@@ -26,32 +26,10 @@ nav .boton-hamburguesa {
 nav .boton-hamburguesa span:hover {
   color: black;
 }
+nav .corazonNav {
+  width: 60px;
+}
 
-/* nav {
-    font-family: $fontPrincipal;
-    img{
-        padding: 10px;
-        margin-left: 20px;
-        width: 2%;}
-        .navbar-toggler{
-            border: none !important;
-            &:focus{
-                box-shadow: none !important ;
-            }
-        }
-
-        .boton-hamburguesa{
-            background-color: none !important;
-            color: #2F67B2;
-            border: none;
-            margin: 5px; 
-            .boton-hamburguesa span:hover{
-                color: black;
-            }
-
-        }  
-
-} */
 .mainIndex {
   width: 98%;
 }
@@ -64,7 +42,7 @@ body {
   width: 100%;
 }
 
-h1 {
+h1, .curiosidad h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5em;
   font-weight: 100;
@@ -73,7 +51,7 @@ h1 {
   text-align: center;
   text-align: center;
 }
-h1 span {
+h1 span, .curiosidad h1 span {
   font-family: "Delicious Handrawn", sans-serif;
   font-size: 1.5em;
   font-weight: 600;
@@ -121,9 +99,6 @@ p {
   line-height: 1.2em;
   color: black;
   text-align: none;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.2em;
-  line-height: 1.5em;
 }
 
 .bgRosa {
@@ -206,7 +181,9 @@ header .ilustracion {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: #d5d5d5 solid 0.5px;
+  border-bottom: #fde5e5 solid 0.5px;
+  margin-left: 10px;
+  margin-bottom: 40px;
 }
 header .ilustracion img {
   padding-top: 10px;
@@ -218,7 +195,7 @@ header .ilustracion img {
 }
 
 .muestras {
-  width: 100%;
+  width: 90%;
   height: auto;
   margin: 20px;
   padding: 0px;
@@ -229,6 +206,7 @@ header .ilustracion img {
   text-align: center;
   justify-content: center;
   margin-top: 70px;
+  margin-left: 25px;
 }
 .muestras .svgDecoracionRosa {
   background-color: #fde5e5;
@@ -240,9 +218,9 @@ header .ilustracion img {
 }
 
 .contenedorTestimonios {
-  width: 98%;
+  width: 95%;
   height: auto;
-  margin: 3px;
+  margin: 10px;
   padding: 8px;
   border: 0px;
   display: flex;
@@ -250,7 +228,7 @@ header .ilustracion img {
   justify-content: center;
   text-align: center;
   justify-content: center;
-  margin-left: 9px;
+  margin-left: 43px;
   margin-bottom: 20px;
 }
 .contenedorTestimonios .testimonios {
@@ -266,6 +244,9 @@ header .ilustracion img {
 .contenedorTestimonios .h2Testimonios {
   font-family: "Delicious Handrawn", sans-serif;
   font-size: 2em;
+  animation-name: animateTestimonio;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .contenedorTestimonios .textoTestimonios {
   font-style: italic;
@@ -280,6 +261,18 @@ header .ilustracion img {
   margin-bottom: -20px;
 }
 
+.curiosidad h1 {
+  font-family: "Delicious Handrawn", sans-serif;
+  font-size: 2em;
+}
+.curiosidad p {
+  font-style: italic;
+}
+.curiosidad .corazonCuriosidad {
+  margin-bottom: 10px;
+  width: 60px;
+}
+
 footer {
   font-family: "Josefin Sans", sans-serif;
 }
@@ -292,7 +285,7 @@ footer img:hover {
   fill: #747373;
 }
 footer ul {
-  background-color: #dedcdc;
+  background-color: #f2cece;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -351,6 +344,7 @@ main {
   font-size: 1.1em;
 }
 .card .card-footer a:hover {
+  filter: grayscale(100%);
   color: #383838;
 }
 
@@ -364,15 +358,16 @@ main {
   flex-direction: none;
   justify-content: none;
   flex-wrap: wrap;
-  margin-left: 30px;
+  margin-left: 50px;
+  gap: 20px;
 }
 
 .tarjeta {
-  width: 50%;
+  width: 60%;
   height: auto;
-  margin: 10px;
+  margin: 10px 0px;
   padding: none;
-  border: #fdf0ed solid 1px;
+  border: #fff0f0 solid 3px;
   display: flex;
   flex-direction: column;
   justify-content: none;
@@ -392,7 +387,6 @@ main {
   text-align: left;
   text-align: left;
   color: white;
-  padding: 10px 15px;
   text-decoration: none;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -402,6 +396,7 @@ main {
 }
 .tarjeta .links-trabajo {
   background-color: #fde5e5;
+  padding: 10px 15px;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
   text-align: left;
@@ -429,12 +424,11 @@ main {
 }
 
 .estudios {
-  margin-left: 50px;
+  margin-left: 35px;
   gap: 40px;
   margin-bottom: 30px;
 }
-
-.h2-sobreMi {
+.estudios .h2-sobreMi {
   font-size: 1.5em;
   background-color: #fde5e5;
   border-top-right-radius: 7px;
@@ -459,23 +453,22 @@ main {
   margin-bottom: 60px;
 }
 .contenedor-contacto .form-control {
-  border: #f3dbd6 solid 1px;
+  border: #f2cece solid 1px;
   width: 300px;
   padding-right: 20px;
 }
 .contenedor-contacto button {
-  background-color: #fdf0ed;
+  background-color: #fde5e5;
   color: #747373;
-  border: #f3dbd6 solid 1px;
+  border: #f2cece solid 1px;
 }
 .contenedor-contacto button:hover {
-  background-color: #f3dbd6;
-  color: #747373;
-  border: #f3dbd6 solid 1px;
+  background-color: #f2cece;
+  border: #f2cece solid 1px;
 }
 .contenedor-contacto .form-control:focus {
   box-shadow: none !important;
-  background-color: #fdf0ed;
+  background-color: #fde5e5;
 }
 
 .presentacionHerramientas {
@@ -521,10 +514,10 @@ main {
     margin-top: 0;
   }
   25% {
-    margin-top: -52px;
+    margin-top: -45px;
   }
   50% {
-    margin-top: -52px;
+    margin-top: -45px;
   }
   55% {
     margin-top: -100px;
@@ -533,10 +526,10 @@ main {
     margin-top: -100px;
   }
   85% {
-    margin-top: -53px;
+    margin-top: -45px;
   }
   95% {
-    margin-top: -53px;
+    margin-top: -45px;
   }
   100% {
     margin-top: 0;
@@ -544,8 +537,42 @@ main {
 }
 .animateSobreMi {
   animation-name: animateSobreMi;
-  animation-duration: 5s;
+  animation-duration: 60s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animateTestimonio {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes animateCorazon {
+  0% {
+    width: 0px;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    width: 30px;
+  }
+}
+.animateCuriosidad {
+  animation-name: animateCorazon;
+  animation-duration: 2s;
   animation-timing-function: linear;
 }
 
@@ -574,21 +601,53 @@ main {
   body footer {
     width: 100%;
     margin-top: 30px;
-    margin-left: 28px;
+    margin-left: 29px;
   }
   body main {
     margin-left: 15px;
   }
-  .tarjeta {
+  .contenedor {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 0px;
+    border: none;
+    display: flex;
+    flex-direction: none;
+    justify-content: none;
+    flex-wrap: wrap;
+    margin-left: 5px;
+  }
+  .contenedor .tarjeta {
     width: 900px;
     height: auto;
     margin: 10px;
     padding: none;
-    border: #fdf0ed solid 1px;
+    border: #fde5e5 solid 1px;
     display: flex;
     flex-direction: column;
     justify-content: none;
-    margin-left: -30px;
+  }
+  .corazonNav {
+    margin-left: -15px;
+    width: 60px;
+  }
+  .index {
+    width: 50%;
+    height: auto;
+    margin: none;
+    padding: 30px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 27px !important;
+    text-decoration: none;
+    border: #747373 solid 1.5px;
+    border-radius: 20px;
+    margin-top: 30px;
   }
   h2, .contenedorTestimonios .h2Testimonios {
     font-family: "Josefin Sans", sans-serif;
@@ -611,7 +670,7 @@ main {
     justify-content: center;
     text-align: center;
     justify-content: center;
-    margin-left: 9px;
+    margin-left: 11px;
     margin-bottom: 20px;
   }
   .contenedorTestimonios .testimonios {
@@ -621,15 +680,16 @@ main {
     justify-content: center;
     text-align: center;
     background-color: #c9dcfa;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
   }
   .contenedorTestimonios .h2Testimonios {
-    font-size: 1.5em;
+    font-family: "Delicious Handrawn", sans-serif;
+    font-size: 2em;
   }
   .contenedorTestimonios .textoTestimonios {
     font-style: italic;
-    font-size: 0.8em;
+    font-size: 1.2em;
     font-weight: 100;
     margin-top: 15px;
   }
@@ -642,7 +702,7 @@ main {
   }
   .card {
     font-family: "Josefin Sans", sans-serif;
-    margin-left: 3px;
+    width: 100%;
   }
   .card h5 {
     font-size: 0.8em;
@@ -678,24 +738,6 @@ main {
     margin-bottom: 60px;
     margin-left: 30px;
   }
-  .contenedor-contacto .form-control {
-    border: #f3dbd6 solid 1px;
-    width: 300px;
-  }
-  .contenedor-contacto button {
-    background-color: #fdf0ed;
-    color: #747373;
-    border: #f3dbd6 solid 1px;
-  }
-  .contenedor-contacto button:hover {
-    background-color: #f3dbd6;
-    color: #747373;
-    border: #f3dbd6 solid 1px;
-  }
-  .contenedor-contacto .form-control:focus {
-    box-shadow: none !important;
-    background-color: #fdf0ed;
-  }
   .presentacionHerramientas {
     border: none !important;
   }
@@ -718,7 +760,7 @@ main {
   }
   .presentacionHerramientas .animateSobreMi .cambiar {
     list-style: none;
-    margin-left: -54px;
+    margin-left: -40px;
     animation: animateHerramientas 15s infinite;
   }
   .presentacionHerramientas .animateSobreMi .cambiar .titulo {
@@ -727,7 +769,7 @@ main {
     padding: 20px;
   }
   .presentacionHerramientas .animateSobreMi .cambiar .herramientas {
-    font-size: 0.5em;
+    font-size: 0.7em;
     font-family: "Josefin Sans", sans-serif;
   }
   @keyframes animateHerramientas {
@@ -775,8 +817,8 @@ main {
   }
 }
 .estudios {
-  padding: 10px;
-  margin-left: 25px;
+  width: 100%;
+  padding: 5px;
 }
 
 @media (min-width: 801px) {
@@ -785,7 +827,7 @@ main {
     height: auto;
     margin: 10px;
     padding: none;
-    border: #fdf0ed solid 1px;
+    border: #fde5e5 solid 1px;
     display: flex;
     flex-direction: column;
     justify-content: none;
@@ -810,7 +852,7 @@ main {
     height: auto;
     margin: 10px;
     padding: none;
-    border: #fdf0ed solid 1px;
+    border: #fde5e5 solid 1px;
     display: flex;
     flex-direction: column;
     justify-content: none;

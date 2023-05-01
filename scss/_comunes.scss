@@ -11,10 +11,10 @@ body{
 
 h1{
 
-    @include  texto($fontPrincipal, $textMd, $fontLight, none, black, center );
+    @include  texto($fontPrincipal, $textMd, $fontLight, none,black, center );
    
     span{
-        @include  texto($fontSecundaria, $textMd,$fontBold, none,  black, center);
+        @include  texto($fontSecundaria, $textMd,$fontBold, none,   black, center );
 
     }
 }
@@ -28,17 +28,14 @@ h3{
     margin-top: 10px;
 }
 h4{
-    @include  texto($fontPrincipal, $textSxx, $fontLight, none, black, none );
+    @include  texto($fontPrincipal, $textSxx, $fontLight, none,black, none );
     margin-top: 10px;
 
 }
 
 p{ 
-    @include  texto($fontPrincipal, $textSm,$fontRegular, $textMd, black, none );
+    @include  texto($fontPrincipal, $textSm,$fontRegular, $textMd,black, none );
 
-  font-family:$fontPrincipal;
-  font-size: $textSm;
-  line-height: 1.5em;
 }
 
 
@@ -65,7 +62,7 @@ p{
 
 //GRID
 .grid{
-	width:100%;
+	width:$width100;
 	display: grid;
 }
 #botonera{
@@ -101,7 +98,7 @@ header {
         @include contenedor( $width100, auto, none, 30px, none, flex, column, center, center);  
 
         text-decoration: none;
-        border: #747373 solid 1.5px;
+        border: map-get($map: $colores, $key:'siete' ) solid 1.5px;
         border-radius: 20px;
         margin-top: 30px;
    
@@ -125,7 +122,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: #d5d5d5 solid 0.5px;
+    border-bottom: map-get($map: $colores, $key:'dos' ) solid 0.5px;
+    margin-left: 10px;
+    margin-bottom: 40px;
         img{
             padding-top: 10px;
             width: 200px;
@@ -136,14 +135,15 @@ header {
 
 //INDEX
 .carousel-inner{
-    width: 98%;
+    width: $width98;
    
 }
 
 //INDEX - HEADER
 .muestras{
-    @include contenedor($width100, auto, 20px, 0px, none, flex, row, center, center); 
-    margin-top: 70px;  
+    @include contenedor($width90, auto, 20px, 0px, none, flex, row, center, center); 
+    margin-top: 70px; 
+    margin-left: 25px; 
     
     .svgDecoracionRosa{
         background-color: map-get($map: $colores, $key:'dos' );
@@ -157,8 +157,8 @@ header {
  
 // TESTIMONIOS INDEX Y SOBRE MI
 .contenedorTestimonios{
-    @include contenedor(98%, auto, 3px, 8px, 0px, flex, row, center, center);
-    margin-left: 9px;
+    @include contenedor($width95, auto, 10px, 8px, 0px, flex, row, center, center);
+    margin-left: 43px;
     margin-bottom: 20px;
 
     .testimonios{
@@ -175,6 +175,12 @@ header {
         @extend h2;
         font-family: $fontSecundaria;
         font-size: $textLg;
+     
+            animation-name: animateTestimonio;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        
+        
     }
     .textoTestimonios{
         font-style: italic;
@@ -192,7 +198,26 @@ header {
    
 }
 
+//CURIOSIDAD
+.curiosidad{
 
+    h1{
+        @extend h1;
+        font-family: $fontSecundaria;
+        font-size: $textLg;
+    }
+    p{
+        font-style: italic;
+    }
+
+    .corazonCuriosidad{
+
+        margin-bottom: 10px;
+        width: 60px;  
+    }
+    
+
+}
 
 
 //PIE
@@ -202,20 +227,20 @@ footer{
     img{ 
         margin-right: 40px;
         width: 30px;
-         fill: white;
+         fill: map-get($map: $colores, $key:'seis' );
          &:hover{ 
-            fill:#747373;  
+            fill:map-get($map: $colores, $key:'siete' );  
          }
      }
      ul {
       
-        background-color: #dedcdc ;
+        background-color: map-get($map: $colores, $key:'uno' ) ;
         display: flex;
         flex-direction: row;
         justify-content: center;
         li{
             font-size: 1.2em;
-            color: white;
+            color: map-get($map: $colores, $key:'seis' );
             display: flex; 
             flex-direction: row;
             text-decoration: none;   
@@ -223,14 +248,14 @@ footer{
             margin: 10px;
             a img{
                 margin-left: 5px;
-                fill:#383838;
+                fill:map-get($map: $colores, $key:'nueve' );
                 }
                 svg{ 
                     margin-left: 10px;
                     width: 30px;
                      fill: map-get($map: $colores, $key:'tres' );
                      &:hover{ 
-                        fill:white;  
+                        fill:map-get($map: $colores, $key:'seis' );  
                      }
                  }
             

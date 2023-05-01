@@ -28,26 +28,30 @@ main{
         flex-direction: row;
         justify-content:space-between;
         a{
+                       
             text-decoration: none;
-            color: #585859;
+            color: map-get($map: $colores, $key:'ocho' );
             font-size: 1.1em;
             &:hover{
-                color: #383838;
+                filter: grayscale(100%);
+                color:map-get($map: $colores, $key:'nueve' );
             }
         }
     }       
 }
 
+
 //TARJETAS PARA TRABAJO Y SOBRE MI
 .contenedor{
     @include contenedor($width100, auto, 10px, 0px, none, flex, none, none, none);
     flex-wrap: wrap;
-    margin-left:30px;
+    margin-left:50px;
+    gap: 20px;
    
 }
 
 .tarjeta{
-    @include contenedor(50%, auto, 10px, none, #fdf0ed solid 1px, flex, column, none, none);
+    @include contenedor($width60, auto, 10px 0px, none,map-get($map: $colores, $key:'tres' ) solid 3px, flex, column, none, none);
   
     border-radius: 7px;
 
@@ -58,10 +62,9 @@ main{
         }  
     
     a{
-        @include  texto($fontPrincipal, $textSm, $fontRegular, none, black, left );
+        @include  texto($fontPrincipal, $textSm, $fontRegular, none,map-get($map: $colores, $key:'diez' ), left );
 
         color: map-get($map: $colores, $key:'seis' );
-        padding: 10px 15px;
         text-decoration: none;
         border-bottom-right-radius: 7px;
         border-bottom-left-radius: 7px;
@@ -72,6 +75,7 @@ main{
     
     .links-trabajo{
         background-color: map-get($map: $colores, $key:'dos' );
+        padding: 10px 15px;
         border-bottom-right-radius: 7px;
         border-bottom-left-radius: 7px;
         text-align: left;
@@ -106,18 +110,19 @@ main{
 
 //SOBRE MI - ESTUDIOS
 .estudios{
-    margin-left: 50px;
+    margin-left: 35px;
     gap:40px;
     margin-bottom: 30px;
+    .h2-sobreMi{
+        font-size: $textMd;
+        background-color:map-get($map: $colores, $key:'dos' );
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+        text-align: left
+    } 
+      
 }
-.h2-sobreMi{
-    font-size: $textMd;
-    background-color:map-get($map: $colores, $key:'dos' );
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
-    text-align: left
-} 
-  
+
 // CONTACTO 
 .contenedor-contacto{
     @include contenedor($width100, auto, 0px, 0px, none, flex, column, center, none);
@@ -130,24 +135,23 @@ main{
     margin-bottom: 60px;
 
     .form-control{
-        border: #f3dbd6 solid 1px; 
+        border: map-get($map: $colores, $key:'uno' ) solid 1px; 
         width: 300px;
         padding-right: 20px;
         
      }
     button{
-        background-color:#fdf0ed ;
-        color: #747373;
-        border: #f3dbd6 solid 1px;
+        background-color:map-get($map: $colores, $key:'dos' ) ;
+        color: map-get($map: $colores, $key:'siete' );
+        border: map-get($map: $colores, $key:'uno' ) solid 1px;
         &:hover{
-            background-color:#f3dbd6 ;
-            color: #747373;
-            border: #f3dbd6 solid 1px;
+            background-color:map-get($map: $colores, $key:'uno' ) ;
+            border: map-get($map: $colores, $key:'uno' ) solid 1px;
         }
     }
     .form-control:focus{
         box-shadow: none !important;
-        background-color: #fdf0ed;
+        background-color: map-get($map: $colores, $key:'dos' );
     }
     
 }
