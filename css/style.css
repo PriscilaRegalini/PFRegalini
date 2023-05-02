@@ -898,9 +898,18 @@ main {
     justify-content: none;
     margin-left: -20px;
   }
+  .mediaTrabajo {
+    margin-left: -40px !important;
+  }
+  .mediaSobreMi {
+    margin-left: 50px !important;
+  }
   .estudios {
     width: 90%;
     margin-bottom: 30px;
+  }
+  .mediaTestimonio {
+    margin-right: -100px !important;
   }
 }
 
