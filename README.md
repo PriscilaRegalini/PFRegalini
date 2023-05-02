@@ -12,7 +12,7 @@
     <li>Portfolio: con 5 html</li>
     <li>Kalaha: con 1 html</li>
     <li>My Recipes: con 1 html</li>
-    <li>3 animaciones: una en el index.html, otra en Trabajos y Sobre mí, y otra en Curiosidad</li>
+    <li>3 animaciones: Uno en index.html, dos en sobreMi.html y uno en Curiosidad</li>
     <li>Aplicación de SEO</li>
     <li>Uso de SASS</li>
     <li>Uso de nodejs</li>
