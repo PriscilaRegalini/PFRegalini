@@ -90,6 +90,7 @@ body{
         }
         strong{
             font-size: $textSxx;
+            font-weight: $fontRegular;
         }
         .svgDecoracionAzul{
             background-color: map-get($map: $colores, $key:'seis' );

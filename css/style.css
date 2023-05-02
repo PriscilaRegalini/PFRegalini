@@ -698,6 +698,7 @@ main {
   }
   .contenedorTestimonios strong {
     font-size: 0.8em;
+    font-weight: 400;
   }
   .contenedorTestimonios .svgDecoracionAzul {
     background-color: white;
