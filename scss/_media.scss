@@ -79,13 +79,17 @@ body{
         }
         .h2Testimonios{
             font-family: $fontSecundaria;
-            font-size: $textLg;
+            font-size: $textMd;
         }
         .textoTestimonios{
             font-style: italic;
             font-size: $textSm;
             font-weight: $fontLight;
             margin-top: 15px;
+            
+        }
+        strong{
+            font-size: $textSxx;
         }
         .svgDecoracionAzul{
             background-color: map-get($map: $colores, $key:'seis' );
@@ -109,6 +113,10 @@ body{
             display: flex;
             flex-direction: column;
             justify-content:space-between;
+            h4{
+                font-size: $textSxx;
+                font-weight: $fontRegular;
+            }
             a{
                 text-decoration: none;
                 color: map-get($map: $colores, $key:'ocho') ;

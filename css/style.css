@@ -688,13 +688,16 @@ main {
   }
   .contenedorTestimonios .h2Testimonios {
     font-family: "Delicious Handrawn", sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .contenedorTestimonios .textoTestimonios {
     font-style: italic;
     font-size: 1.2em;
     font-weight: 100;
     margin-top: 15px;
+  }
+  .contenedorTestimonios strong {
+    font-size: 0.8em;
   }
   .contenedorTestimonios .svgDecoracionAzul {
     background-color: white;
@@ -715,6 +718,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  .card .card-footer h4 {
+    font-size: 0.8em;
+    font-weight: 400;
   }
   .card .card-footer a {
     text-decoration: none;
