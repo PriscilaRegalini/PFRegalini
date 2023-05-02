@@ -101,11 +101,7 @@ header {
         border: map-get($map: $colores, $key:'siete' ) solid 1.5px;
         border-radius: 20px;
         margin-top: 30px;
-   
-        .corazon{
-            margin-bottom: 10px;
-            width: 50px;
-        }
+  
         .svgDecoracionRosa{
             background-color: map-get($map: $colores, $key:'seis' );
             border-radius: 35px;
@@ -113,10 +109,12 @@ header {
             stroke: map-get($map:$colores , $key:'uno' );
             margin-bottom: -20px;
             align-items: center; 
-
         }
        
     }
+    .imgIndex{
+        margin-left: 50px !important;
+      }
     .ilustracion{
     display: flex;
     flex-direction: column;
@@ -142,7 +140,7 @@ header {
 //INDEX - HEADER
 .muestras{
     @include contenedor($width90, auto, 20px, 0px, none, flex, row, center, center); 
-    margin-top: 70px; 
+    margin-top: 10px; 
     margin-left: 25px; 
     
     .svgDecoracionRosa{
@@ -151,14 +149,14 @@ header {
         padding: 5px;
         stroke: map-get($map:$colores , $key:'seis' );
         margin-bottom: -15px;
-        margin-left: -30px;
+        margin-left: 70px;
     }
 }
  
 // TESTIMONIOS INDEX Y SOBRE MI
 .contenedorTestimonios{
-    @include contenedor($width95, auto, 10px, 8px, 0px, flex, row, center, center);
-    margin-left: 43px;
+    @include contenedor($width90, auto, 10px, 0px, 0px, flex, row, center, center);
+    margin-left: 30px;
     margin-bottom: 20px;
 
     .testimonios{
@@ -262,4 +260,10 @@ footer{
         }
     }
 
+}
+
+.error{
+    img{
+        width: 2%;
+    }
 }

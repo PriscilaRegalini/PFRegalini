@@ -164,10 +164,6 @@ header .presentacion, header .presentacionHerramientas {
   border-radius: 20px;
   margin-top: 30px;
 }
-header .presentacion .corazon, header .presentacionHerramientas .corazon {
-  margin-bottom: 10px;
-  width: 50px;
-}
 header .presentacion .svgDecoracionRosa, header .presentacionHerramientas .svgDecoracionRosa {
   background-color: white;
   border-radius: 35px;
@@ -175,6 +171,9 @@ header .presentacion .svgDecoracionRosa, header .presentacionHerramientas .svgDe
   stroke: #f2cece;
   margin-bottom: -20px;
   align-items: center;
+}
+header .imgIndex {
+  margin-left: 50px !important;
 }
 header .ilustracion {
   display: flex;
@@ -205,7 +204,7 @@ header .ilustracion img {
   justify-content: center;
   text-align: center;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 10px;
   margin-left: 25px;
 }
 .muestras .svgDecoracionRosa {
@@ -214,21 +213,21 @@ header .ilustracion img {
   padding: 5px;
   stroke: white;
   margin-bottom: -15px;
-  margin-left: -30px;
+  margin-left: 70px;
 }
 
 .contenedorTestimonios {
-  width: 95%;
+  width: 90%;
   height: auto;
   margin: 10px;
-  padding: 8px;
+  padding: 0px;
   border: 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
   justify-content: center;
-  margin-left: 43px;
+  margin-left: 30px;
   margin-bottom: 20px;
 }
 .contenedorTestimonios .testimonios {
@@ -310,6 +309,10 @@ footer ul li svg {
 }
 footer ul li svg:hover {
   fill: white;
+}
+
+.error img {
+  width: 2%;
 }
 
 main {
@@ -424,7 +427,7 @@ main {
 }
 
 .estudios {
-  margin-left: 35px;
+  margin-left: 15px !important;
   gap: 40px;
   margin-bottom: 30px;
 }
@@ -721,6 +724,9 @@ main {
   .card .card-footer a:hover {
     color: #383838;
   }
+  .muestras .svgDecoracionRosa {
+    margin-left: -20px;
+  }
   .contenedor-contacto {
     width: 100%;
     height: auto;
@@ -737,6 +743,11 @@ main {
     margin-top: 30px;
     margin-bottom: 60px;
     margin-left: 30px;
+  }
+  .estudios {
+    width: 90%;
+    margin-left: -3px !important;
+    margin-bottom: 30px;
   }
   .presentacionHerramientas {
     border: none !important;
@@ -771,6 +782,20 @@ main {
   .presentacionHerramientas .animateSobreMi .cambiar .herramientas {
     font-size: 0.7em;
     font-family: "Josefin Sans", sans-serif;
+  }
+  .contenedorTestimonios {
+    width: 95%;
+    height: auto;
+    margin: 10px;
+    padding: 8px;
+    border: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 7px;
+    margin-bottom: 20px;
   }
   @keyframes animateHerramientas {
     0% {
@@ -818,7 +843,8 @@ main {
 }
 .estudios {
   width: 100%;
-  padding: 5px;
+  margin-left: 10px !important;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 801px) {
@@ -845,8 +871,22 @@ main {
   .herramientas svg {
     width: 5%;
   }
+  .contenedorTestimonios {
+    width: 97%;
+    height: auto;
+    margin: 10px;
+    padding: 8px;
+    border: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 7px;
+    margin-bottom: 20px;
+  }
 }
-@media (min-width: 802px) and (max-width: 1000px) {
+@media (min-width: 802px) and (max-width: 1200px) {
   .tarjeta {
     width: 100%;
     height: auto;
@@ -857,6 +897,10 @@ main {
     flex-direction: column;
     justify-content: none;
     margin-left: -20px;
+  }
+  .estudios {
+    width: 90%;
+    margin-bottom: 30px;
   }
 }
 

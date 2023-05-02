@@ -58,6 +58,7 @@ body{
     border-radius: 20px;
     margin-top: 30px;
   }
+
     h2{
         @include  texto($fontPrincipal, $textSm, $fontRegular, none,map-get($map: $colores, $key:'diez' ), center );
         margin-top: 30px
@@ -118,6 +119,11 @@ body{
             }
         }       
     }
+.muestras{ 
+    .svgDecoracionRosa{
+      margin-left: -20px;
+    }
+}
         //FIN INDEX
 
         // CONTACTO 
@@ -130,12 +136,16 @@ body{
         margin-top: 30px;
         margin-bottom: 60px;
         margin-left:30px;
-
     }
 
     //FIN CONTACTO
 
     // SOBRE MI - HERRAMIENTAS
+    .estudios{
+        width: $width90;
+        margin-left: -3px !important;
+        margin-bottom: 30px;   
+    }
         .presentacionHerramientas{
             @extend .presentacion;
             border: none !important;
@@ -166,6 +176,11 @@ body{
                 }
             }
         }
+        .contenedorTestimonios{
+            @include contenedor($width95, auto, 10px, 8px, 0px, flex, row, center, center);
+            margin-left: 7px;
+            margin-bottom: 20px;}
+
         //ANIMACION
         @keyframes animateHerramientas{
             0%{margin-top: 10px;}
@@ -204,7 +219,8 @@ body{
     //SOBRE MI  - ESTUDIOS
     .estudios{
         width: $width100;
-        padding: 5px;
+        margin-left: 10px !important;
+        margin-bottom: 30px;  
     }
 
 
@@ -230,14 +246,25 @@ body{
             width: 5%;
         }
     }
+
+    .contenedorTestimonios{
+        @include contenedor($width97, auto, 10px, 8px, 0px, flex, row, center, center);
+        margin-left: 7px;
+        margin-bottom: 20px;}
 }
 
 
-@media (min-width: 802px) and (max-width: 1000px){
+
+@media (min-width: 802px) and (max-width: 1200px){
 
     .tarjeta{
         @include contenedor($width100, auto, 10px, none, map-get($map: $colores, $key:'dos' ) solid 1px, flex, column, none, none);
        margin-left: -20px;
     }
   
+
+    .estudios{
+        width: $width90;
+        margin-bottom: 30px;   
+    }
 }
