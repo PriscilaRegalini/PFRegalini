@@ -1,6 +1,31 @@
 
 @media (max-width: 800px){
+    //error 404
 
+.error404{
+    width: 270px !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: -10px;
+    }
+.aError{
+            
+        @include  texto($fontPrincipal, $textSm, $fontLight, none,black, center );
+        text-decoration: none;
+        cursor: pointer;
+                margin-top: 30px;
+                svg{
+                    margin-bottom: 16px;
+                }
+                &:hover{
+                    color: map-get($map: $colores, $key:'ocho' );
+                }
+            }
+            hr{
+                margin: 0px 30px;
+                margin-top: 40px;
+            }
     // GENERALES
 .grid{
     width:$width100;
@@ -8,38 +33,21 @@
  }
 
 .areas{
-     grid-template-columns: 100vw;
+     grid-template-columns:5vw 90vw 5vw;
      grid-template-rows: auto;
      grid-template-areas: 
      "botonera" 
-     "presentacion " 
+     ".presentacion." 
      "centro"
      "pie";
  }
-   
-body{
-    margin: -28px; 
-    header{
-        width: $width90;
-        margin-left: 44px; }
-    nav{
-        width: $width100;
-        margin-top: 14px;
-        margin-left: 14px;}
-    footer{
-        width: $width100;
-        margin-top: 30px;
-        margin-left: 29px;}
-    main{
-        margin-left: 15px;}     
-}
 
 .contenedor{
     @include contenedor($width100, auto, 10px, 0px, none, flex, none, none, none);
     flex-wrap: wrap;
-    margin-left:5px;
+    margin-left:0px;
     .tarjeta{
-        @include contenedor(900px, auto, 10px, none, map-get($map: $colores, $key:'dos' ) solid 1px, flex, column, none, none);   
+        @include contenedor(900px, auto, 10px, none, map-get($map: $colores, $key:'dos' ) solid 1px, flex, column, none, none);  
     } 
 }
 
@@ -47,7 +55,7 @@ body{
     //INDEX
     .corazonNav{
         margin-left: -15px;
-        width: 60px;
+        width: 80px;
     }
 
   .index{
@@ -59,46 +67,26 @@ body{
     margin-top: 30px;
   }
 
+
     h2{
         @include  texto($fontPrincipal, $textSm, $fontRegular, none,map-get($map: $colores, $key:'diez' ), center );
         margin-top: 30px
     }
     .contenedorTestimonios{
         @include contenedor($width94, auto, 3px, 8px, 0px, flex, row, center, center);
-        margin-left: 11px;
+        margin-left: -2px !important;
         margin-bottom: 20px;
         .testimonios{
-            width: $width100;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            background-color: map-get($map: $colores, $key:'once' );
-            padding: 30px;
-            border-radius: 10px;
+           padding: 20px;
         }
         .h2Testimonios{
+            @extend h2;
             font-family: $fontSecundaria;
-            font-size: $textMd;
+            font-size: $textLg;
         }
         .textoTestimonios{
             font-style: italic;
-            font-size: $textSm;
-            font-weight: $fontLight;
-            margin-top: 15px;
-            
-        }
-        strong{
-            font-size: $textSxx;
-            font-weight: $fontRegular;
-        }
-        .svgDecoracionAzul{
-            background-color: map-get($map: $colores, $key:'seis' );
-            border-radius: 35px;
-            padding: 5px;
-            stroke: map-get($map:$colores , $key:'once' );
-            margin-bottom: -20px;
-        
+            margin-top: 15px;   
         }
     }
 
@@ -128,11 +116,6 @@ body{
             }
         }       
     }
-.muestras{ 
-    .svgDecoracionRosa{
-      margin-left: -20px;
-    }
-}
    
 
         // CONTACTO 
@@ -144,14 +127,12 @@ body{
         border-radius: 7px;
         margin-top: 30px;
         margin-bottom: 60px;
-        margin-left:30px;
     }
 
 
     // SOBRE MI - HERRAMIENTAS
     .estudios{
-        width: $width90;
-        margin-left: -3px !important;
+        width: $width100;
         margin-bottom: 30px;   
     }
         .presentacionHerramientas{
@@ -223,66 +204,34 @@ body{
             }
          }
     }
-    
-    //SOBRE MI  - ESTUDIOS
-    .estudios{
-        width: $width100;
-        margin-left: 10px !important;
-        margin-bottom: 30px;  
-    }
 
-
-
-    //MEDIAS PARA RETOQUES
-@media (min-width: 801px){
-
-    .tarjeta{
-        @include contenedor(45%, auto, 10px, none,map-get($map: $colores, $key:'dos' ) solid 1px, flex, column, none, none);
-        margin-left: 10px;
-    }
-
-    //HERRAMIENTAS
-.herramientas{
-   
-        width: $width97 !important;
-        border-radius: 10px;
-        h2{
-            font-family: $fontPrincipal;
-            font-size: $textSm;
-            margin-bottom: 30px;
-        }
-        svg{
-            width: 5%;
-        }
-    }
-
-    .contenedorTestimonios{
-        @include contenedor($width97, auto, 10px, 8px, 0px, flex, row, center, center);
-        margin-left: 7px;
-        margin-bottom: 20px;}
-
+footer{
+    margin-top: 30px;
 }
 
 
+    //MEDIAS PARA RETOQUES
 
-@media (min-width: 802px) and (max-width: 1200px){
+@media (min-width: 802px) and (max-width: 1000px){
 
     .tarjeta{
         @include contenedor($width100, auto, 10px, none, map-get($map: $colores, $key:'dos' ) solid 1px, flex, column, none, none);
-       margin-left: -20px;
     }
   
     .mediaTrabajo{
-        margin-left: -40px !important;
+       width: $width90;
+       margin-bottom: 40px;
     }
     .mediaSobreMi{
-        margin-left: 50px !important;
+        margin-left: 10px !important;
     }
     .estudios{
         width: $width90;
         margin-bottom: 30px;   
     }
     .mediaTestimonio{
-        margin-right: -100px !important;
+        width: $width90;
+        margin-left: 24px !important;
+        margin-bottom: 50px;
     }
 }

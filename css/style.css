@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Josefin+Sans:ital,wght@0,100;0,300;0,600;0,700;1,100;1,300;1,600&display=swap");
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 nav {
@@ -28,18 +29,6 @@ nav .boton-hamburguesa span:hover {
 }
 nav .corazonNav {
   width: 60px;
-}
-
-.mainIndex {
-  width: 98%;
-}
-
-main {
-  width: 95%;
-}
-
-body {
-  width: 100%;
 }
 
 h1, .curiosidad h1 {
@@ -101,16 +90,17 @@ p {
   text-align: none;
 }
 
+hr {
+  margin: 0px 80px;
+  margin-top: 40px;
+}
+
 .bgRosa {
   background-color: #f2cece;
 }
 
 .bgRosaClaro {
   background-color: #fde5e5;
-}
-
-.bgVerdeAgua {
-  background-color: #c4ebeb;
 }
 
 .bgAzul {
@@ -148,7 +138,7 @@ p {
   grid-template-areas: "botonera botonera botonera" ". presentacion ." "centro centro centro" "pie pie pie";
 }
 
-header .presentacion, header .presentacionHerramientas {
+header .presentacion, header .presentacionHerramientas, header .errorPage {
   width: 100%;
   height: auto;
   margin: none;
@@ -163,14 +153,6 @@ header .presentacion, header .presentacionHerramientas {
   border: #747373 solid 1.5px;
   border-radius: 20px;
   margin-top: 30px;
-}
-header .presentacion .svgDecoracionRosa, header .presentacionHerramientas .svgDecoracionRosa {
-  background-color: white;
-  border-radius: 35px;
-  padding: 5px;
-  stroke: #f2cece;
-  margin-bottom: -20px;
-  align-items: center;
 }
 header .imgIndex {
   margin-left: 50px !important;
@@ -193,33 +175,10 @@ header .ilustracion img {
   width: 98%;
 }
 
-.muestras {
-  width: 90%;
-  height: auto;
-  margin: 20px;
-  padding: 0px;
-  border: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  justify-content: center;
-  margin-top: 10px;
-  margin-left: 25px;
-}
-.muestras .svgDecoracionRosa {
-  background-color: #fde5e5;
-  border-radius: 35px;
-  padding: 5px;
-  stroke: white;
-  margin-bottom: -15px;
-  margin-left: 70px;
-}
-
 .contenedorTestimonios {
-  width: 90%;
+  width: 98%;
   height: auto;
-  margin: 10px;
+  margin: 0px;
   padding: 0px;
   border: 0px;
   display: flex;
@@ -227,37 +186,35 @@ header .ilustracion img {
   justify-content: center;
   text-align: center;
   justify-content: center;
-  margin-left: 30px;
-  margin-bottom: 20px;
+  margin-left: 3px;
 }
 .contenedorTestimonios .testimonios {
   width: 100%;
+  height: auto;
+  margin: none;
+  padding: none;
+  border: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  justify-content: center;
   background-color: #c9dcfa;
-  padding: 20px;
   border-radius: 10px;
+  margin-left: 20px !important;
 }
 .contenedorTestimonios .h2Testimonios {
   font-family: "Delicious Handrawn", sans-serif;
   font-size: 2em;
-  animation-name: animateTestimonio;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  /*  animation-name: animateTestimonio;
+   animation-duration: 4s;
+   animation-iteration-count: infinite; */
 }
 .contenedorTestimonios .textoTestimonios {
   font-style: italic;
-  font-weight: 100;
-  margin-top: 15px;
 }
-.contenedorTestimonios .svgDecoracionAzul {
-  background-color: white;
-  border-radius: 35px;
-  padding: 5px;
-  stroke: #c9dcfa;
-  margin-bottom: -20px;
+.contenedorTestimonios .textoTestimonios span {
+  font-weight: 100;
 }
 
 .curiosidad h1 {
@@ -311,12 +268,52 @@ footer ul li svg:hover {
   fill: white;
 }
 
-.error img {
-  width: 2%;
+.errorPage {
+  border: none !important;
+}
+.errorPage .error404 {
+  width: 45%;
+  justify-content: center;
+  align-items: center;
 }
 
-main {
-  padding-left: 30px;
+.aError {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+  line-height: 1.5em;
+  color: #383838;
+  text-align: center;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 30px;
+}
+.aError svg {
+  margin-bottom: 16px;
+}
+.aError:hover {
+  color: #585859;
+}
+.aError span {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 0.8em;
+  color: #747373;
+  text-align: center;
+  text-align: center;
+  background-color: #fde5e5;
+  border: #f2cece solid 1px;
+  border-radius: 7px;
+  color: #747373;
+  /* line-height: $textXl; */
+  padding: 8px 15px;
+}
+.aError span:hover {
+  background-color: #f2cece;
+  color: white;
 }
 
 .header {
@@ -324,12 +321,12 @@ main {
 }
 
 .card {
-  width: 98%;
+  width: 100%;
   font-family: "Josefin Sans", sans-serif;
 }
 .card h3 {
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 1.1em;
   margin-top: 5px;
 }
 .card p {
@@ -352,29 +349,32 @@ main {
 }
 
 .contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   height: auto;
-  margin: 10px;
+  margin: 10px 0px;
   padding: 0px;
   border: none;
   display: flex;
   flex-direction: none;
   justify-content: none;
   flex-wrap: wrap;
-  margin-left: 50px;
   gap: 20px;
 }
 
 .tarjeta {
-  width: 60%;
+  width: 40%;
   height: auto;
-  margin: 10px 0px;
+  margin: 30px 30px;
   padding: none;
-  border: #fff0f0 solid 3px;
+  border: #fde5e5 solid 2px;
   display: flex;
   flex-direction: column;
   justify-content: none;
-  border-radius: 7px;
+  border-radius: 10px;
 }
 .tarjeta img {
   width: 100%;
@@ -391,8 +391,6 @@ main {
   text-align: left;
   color: white;
   text-decoration: none;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
 }
 .tarjeta a:hover {
   color: #585859;
@@ -427,8 +425,7 @@ main {
 }
 
 .estudios {
-  margin-left: 15px !important;
-  gap: 40px;
+  gap: 25px;
   margin-bottom: 30px;
 }
 .estudios .h2-sobreMi {
@@ -462,8 +459,13 @@ main {
 }
 .contenedor-contacto button {
   background-color: #fde5e5;
-  color: #747373;
   border: #f2cece solid 1px;
+  border-radius: 7px;
+  color: #747373;
+  /* line-height: $textXl; */
+  /* background-color:map-get($map: $colores, $key:'dos' ) ;
+  color: map-get($map: $colores, $key:'siete' );
+  border: map-get($map: $colores, $key:'uno' ) solid 1px; */
 }
 .contenedor-contacto button:hover {
   background-color: #f2cece;
@@ -580,34 +582,43 @@ main {
 }
 
 @media (max-width: 800px) {
+  .error404 {
+    width: 270px !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: -10px;
+  }
+  .aError {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 100;
+    line-height: 1.2em;
+    color: black;
+    text-align: center;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  .aError svg {
+    margin-bottom: 16px;
+  }
+  .aError:hover {
+    color: #585859;
+  }
+  hr {
+    margin: 0px 30px;
+    margin-top: 40px;
+  }
   .grid {
     width: 100%;
     display: grid;
   }
   .areas {
-    grid-template-columns: 100vw;
+    grid-template-columns: 5vw 90vw 5vw;
     grid-template-rows: auto;
-    grid-template-areas: "botonera" "presentacion " "centro" "pie";
-  }
-  body {
-    margin: -28px;
-  }
-  body header {
-    width: 90%;
-    margin-left: 44px;
-  }
-  body nav {
-    width: 100%;
-    margin-top: 14px;
-    margin-left: 14px;
-  }
-  body footer {
-    width: 100%;
-    margin-top: 30px;
-    margin-left: 29px;
-  }
-  body main {
-    margin-left: 15px;
+    grid-template-areas: "botonera" ".presentacion." "centro" "pie";
   }
   .contenedor {
     width: 100%;
@@ -619,7 +630,7 @@ main {
     flex-direction: none;
     justify-content: none;
     flex-wrap: wrap;
-    margin-left: 5px;
+    margin-left: 0px;
   }
   .contenedor .tarjeta {
     width: 900px;
@@ -633,7 +644,7 @@ main {
   }
   .corazonNav {
     margin-left: -15px;
-    width: 60px;
+    width: 80px;
   }
   .index {
     width: 50%;
@@ -673,39 +684,19 @@ main {
     justify-content: center;
     text-align: center;
     justify-content: center;
-    margin-left: 11px;
+    margin-left: -2px !important;
     margin-bottom: 20px;
   }
   .contenedorTestimonios .testimonios {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: #c9dcfa;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 20px;
   }
   .contenedorTestimonios .h2Testimonios {
     font-family: "Delicious Handrawn", sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
   }
   .contenedorTestimonios .textoTestimonios {
     font-style: italic;
-    font-size: 1.2em;
-    font-weight: 100;
     margin-top: 15px;
-  }
-  .contenedorTestimonios strong {
-    font-size: 0.8em;
-    font-weight: 400;
-  }
-  .contenedorTestimonios .svgDecoracionAzul {
-    background-color: white;
-    border-radius: 35px;
-    padding: 5px;
-    stroke: #c9dcfa;
-    margin-bottom: -20px;
   }
   .card {
     font-family: "Josefin Sans", sans-serif;
@@ -732,9 +723,6 @@ main {
   .card .card-footer a:hover {
     color: #383838;
   }
-  .muestras .svgDecoracionRosa {
-    margin-left: -20px;
-  }
   .contenedor-contacto {
     width: 100%;
     height: auto;
@@ -750,11 +738,9 @@ main {
     border-radius: 7px;
     margin-top: 30px;
     margin-bottom: 60px;
-    margin-left: 30px;
   }
   .estudios {
-    width: 90%;
-    margin-left: -3px !important;
+    width: 100%;
     margin-bottom: 30px;
   }
   .presentacionHerramientas {
@@ -849,52 +835,11 @@ main {
     margin: 21px !important;
   }
 }
-.estudios {
-  width: 100%;
-  margin-left: 10px !important;
-  margin-bottom: 30px;
+footer {
+  margin-top: 30px;
 }
 
-@media (min-width: 801px) {
-  .tarjeta {
-    width: 45%;
-    height: auto;
-    margin: 10px;
-    padding: none;
-    border: #fde5e5 solid 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: none;
-    margin-left: 10px;
-  }
-  .herramientas {
-    width: 97% !important;
-    border-radius: 10px;
-  }
-  .herramientas h2, .herramientas .contenedorTestimonios .h2Testimonios, .contenedorTestimonios .herramientas .h2Testimonios {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.2em;
-    margin-bottom: 30px;
-  }
-  .herramientas svg {
-    width: 5%;
-  }
-  .contenedorTestimonios {
-    width: 97%;
-    height: auto;
-    margin: 10px;
-    padding: 8px;
-    border: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    justify-content: center;
-    margin-left: 7px;
-    margin-bottom: 20px;
-  }
-}
-@media (min-width: 802px) and (max-width: 1200px) {
+@media (min-width: 802px) and (max-width: 1000px) {
   .tarjeta {
     width: 100%;
     height: auto;
@@ -904,20 +849,22 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: none;
-    margin-left: -20px;
   }
   .mediaTrabajo {
-    margin-left: -40px !important;
+    width: 90%;
+    margin-bottom: 40px;
   }
   .mediaSobreMi {
-    margin-left: 50px !important;
+    margin-left: 10px !important;
   }
   .estudios {
     width: 90%;
     margin-bottom: 30px;
   }
   .mediaTestimonio {
-    margin-right: -100px !important;
+    width: 90%;
+    margin-left: 24px !important;
+    margin-bottom: 50px;
   }
 }
 

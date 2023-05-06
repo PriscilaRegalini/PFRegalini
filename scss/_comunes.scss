@@ -1,14 +1,4 @@
 
-.mainIndex{
-    width: $width98;
-}
-main{
-    width: $width95;
-}
-body{
-    width: $width100;
-}
-
 h1{
 
     @include  texto($fontPrincipal, $textMd, $fontLight, none,black, center );
@@ -19,7 +9,7 @@ h1{
     }
 }
 h2{
-    @include  texto($fontPrincipal, $textMd, $fontRegular, none, black, center );
+    @include  texto($fontPrincipal, $textMd, $fontRegular, $textMd, black, center );
     margin-top: 30px
 }
 h3{
@@ -37,12 +27,13 @@ p{
     @include  texto($fontPrincipal, $textSm,$fontRegular, $textMd,black, none );
 
 }
+hr{
+    margin: 0px 80px;
+    margin-top: 40px;
+}
 
 
 //bg
-
-
-
 
 .bgRosa{
     background-color: map-get($map: $colores, $key:'uno' );
@@ -50,9 +41,7 @@ p{
 .bgRosaClaro{
     background-color: map-get($map: $colores, $key:'dos' );
 }
-.bgVerdeAgua{
-    background-color: map-get($map: $colores, $key:'trece' );
-}
+
 .bgAzul{
     background-color: map-get($map: $colores, $key:'once' );
 }
@@ -101,15 +90,6 @@ header {
         border: map-get($map: $colores, $key:'siete' ) solid 1.5px;
         border-radius: 20px;
         margin-top: 30px;
-  
-        .svgDecoracionRosa{
-            background-color: map-get($map: $colores, $key:'seis' );
-            border-radius: 35px;
-            padding: 5px;
-            stroke: map-get($map:$colores , $key:'uno' );
-            margin-bottom: -20px;
-            align-items: center; 
-        }
        
     }
     .imgIndex{
@@ -134,66 +114,33 @@ header {
 //INDEX
 .carousel-inner{
     width: $width98;
-   
 }
 
-//INDEX - HEADER
-.muestras{
-    @include contenedor($width90, auto, 20px, 0px, none, flex, row, center, center); 
-    margin-top: 10px; 
-    margin-left: 25px; 
-    
-    .svgDecoracionRosa{
-        background-color: map-get($map: $colores, $key:'dos' );
-        border-radius: 35px;
-        padding: 5px;
-        stroke: map-get($map:$colores , $key:'seis' );
-        margin-bottom: -15px;
-        margin-left: 70px;
-    }
-}
- 
 // TESTIMONIOS INDEX Y SOBRE MI
 .contenedorTestimonios{
-    @include contenedor($width90, auto, 10px, 0px, 0px, flex, row, center, center);
-    margin-left: 30px;
-    margin-bottom: 20px;
+    @include contenedor($width98, auto, 0px, 0px, 0px, flex, row, center, center);
+    margin-left: 3px;
 
     .testimonios{
-        width: $width100;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
+        @include contenedor($width100, auto, none, none, none, flex, column, center, center);
         background-color: map-get($map: $colores, $key:'once' );
-        padding: 20px;
         border-radius: 10px;
+        margin-left: 20px !important;
     }
     .h2Testimonios{
         @extend h2;
         font-family: $fontSecundaria;
         font-size: $textLg;
-     
-            animation-name: animateTestimonio;
+           /*  animation-name: animateTestimonio;
             animation-duration: 4s;
-            animation-iteration-count: infinite;
-        
-        
+            animation-iteration-count: infinite; */     
     }
-    .textoTestimonios{
+    .textoTestimonios{   
         font-style: italic;
-        font-weight: $fontLight;
-        margin-top: 15px;
+        span{
+            font-weight: $fontLight;
+        }
     }
-    .svgDecoracionAzul{
-        background-color: map-get($map: $colores, $key:'seis' );
-        border-radius: 35px;
-        padding: 5px;
-        stroke: map-get($map:$colores , $key:'once' );
-        margin-bottom: -20px;
-    
-    }
-   
 }
 
 //CURIOSIDAD
@@ -209,12 +156,9 @@ header {
     }
 
     .corazonCuriosidad{
-
         margin-bottom: 10px;
         width: 60px;  
     }
-    
-
 }
 
 
@@ -231,7 +175,6 @@ footer{
          }
      }
      ul {
-      
         background-color: map-get($map: $colores, $key:'uno' ) ;
         display: flex;
         flex-direction: row;
@@ -262,8 +205,39 @@ footer{
 
 }
 
-.error{
-    img{
-        width: 2%;
-    }
+//error 404 403
+.errorPage{
+    @extend .presentacion;
+    border: none !important;
+    .error404{
+        width: 45%;
+        justify-content: center;
+        align-items: center;
+        }
 }
+
+.aError{
+        @include  texto($fontPrincipal, $textMd, $fontLight, none, map-get($map: $colores, $key:'nueve' ), center );
+        text-decoration: none;
+        cursor: pointer;
+        padding: 10px;
+                margin-top: 30px;
+                svg{
+                    margin-bottom: 16px;
+                }
+                &:hover{
+                    color: map-get($map: $colores, $key:'ocho' );
+                }
+                span{
+                    @include  texto($fontPrincipal, $textSxx, $fontRegular, $textXl, map-get($map: $colores, $key:'siete' ), center );
+
+                    @include boton;
+                    padding: 8px 15px;
+                    &:hover{
+                        background-color: map-get($map: $colores, $key: 'uno' );
+                        color: map-get($map: $colores, $key:'seis' );
+                    }
+                }
+
+                
+            }

@@ -1,22 +1,20 @@
 
 //INDEX
 
-main{
-    padding-left: 30px;
-}
 .header{
     padding-right: 55px;
 }
 
 .card{
 
-    width: $width98;
+    width: $width100;
+
     font-family: $fontPrincipal;
 
     h3{
         @extend h3;
         font-weight: $fontRegular;
-        font-size: $textSxx;
+        font-size: $textSx;
         margin-top: 5px;
     }
     p{
@@ -43,18 +41,18 @@ main{
 
 //TARJETAS PARA TRABAJO Y SOBRE MI
 .contenedor{
-    @include contenedor($width100, auto, 10px, 0px, none, flex, none, none, none);
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin-left:50px;
+    justify-content: center;
+    @include contenedor($width100, auto, 10px 0px, 0px, none, flex, none, none, none);
+    flex-wrap: wrap;
     gap: 20px;
-   
 }
 
 .tarjeta{
-    @include contenedor($width60, auto, 10px 0px, none,map-get($map: $colores, $key:'tres' ) solid 3px, flex, column, none, none);
-  
-    border-radius: 7px;
-
+    @include contenedor($width40, auto, 30px 30px, none,map-get($map: $colores, $key:'dos' ) solid 2px, flex, column, none, none);
+    border-radius: 10px;
     img{
         width: 100%;
         border-top-left-radius: 7px;
@@ -63,15 +61,13 @@ main{
     
     a{
         @include  texto($fontPrincipal, $textSm, $fontRegular, none,map-get($map: $colores, $key:'diez' ), left );
-
         color: map-get($map: $colores, $key:'seis' );
         text-decoration: none;
-        border-bottom-right-radius: 7px;
-        border-bottom-left-radius: 7px;
         &:hover{
             color: map-get($map: $colores, $key: 'ocho');
         }
     }
+
     
     .links-trabajo{
         background-color: map-get($map: $colores, $key:'dos' );
@@ -107,11 +103,10 @@ main{
  } 
 // FIN DE TARJETAS
 
-
 //SOBRE MI - ESTUDIOS
+
 .estudios{
-    margin-left: 15px !important;
-    gap:40px;
+    gap:25px;
     margin-bottom: 30px;
     .h2-sobreMi{
         font-size: $textMd;
@@ -119,8 +114,7 @@ main{
         border-top-right-radius: 7px;
         border-top-left-radius: 7px;
         text-align: left
-    } 
-      
+    }       
 }
 
 // CONTACTO 
@@ -141,9 +135,11 @@ main{
         
      }
     button{
-        background-color:map-get($map: $colores, $key:'dos' ) ;
+        @include boton;
+        /* background-color:map-get($map: $colores, $key:'dos' ) ;
         color: map-get($map: $colores, $key:'siete' );
-        border: map-get($map: $colores, $key:'uno' ) solid 1px;
+        border: map-get($map: $colores, $key:'uno' ) solid 1px; */
+
         &:hover{
             background-color:map-get($map: $colores, $key:'uno' ) ;
             border: map-get($map: $colores, $key:'uno' ) solid 1px;

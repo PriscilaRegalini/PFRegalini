@@ -36,3 +36,11 @@
      @else if $text-align == right {text-align: right}
      @else if $text-align == left {text-align: left;}
 }
+
+@mixin boton {
+    background-color: map-get($map: $colores, $key: 'dos' );
+    border: map-get($map: $colores, $key:'uno' ) solid 1px;
+    border-radius: 7px;
+    color: map-get($map: $colores, $key:'siete' );
+    /* line-height: $textXl; */
+  }
