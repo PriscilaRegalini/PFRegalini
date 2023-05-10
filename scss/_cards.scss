@@ -137,10 +137,6 @@
      }
     button{
         @include boton;
-        /* background-color:map-get($map: $colores, $key:'dos' ) ;
-        color: map-get($map: $colores, $key:'siete' );
-        border: map-get($map: $colores, $key:'uno' ) solid 1px; */
-
         &:hover{
             background-color:map-get($map: $colores, $key:'uno' ) ;
             border: map-get($map: $colores, $key:'uno' ) solid 1px;

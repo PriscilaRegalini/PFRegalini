@@ -1,5 +1,5 @@
 
-//ANIMACIÓN SOBRE MI - HERRAMIENTAS
+//ANIMACIÓN SOBRE MI - CUALIDADES
 .presentacionHerramientas{
     @extend .presentacion;
     border: none !important;
@@ -43,7 +43,7 @@
 
     100%{margin-top: 0;}
 }
-
+//ANIMACIÓN CURIOSIDAD -  CORAZÓN
 @keyframes animateCorazon{
 	0%{width: 0px;}
     25%{opacity:1}
@@ -56,6 +56,7 @@
 	animation-timing-function: linear;
 }
 
+//ANIMACIÓN <a>
 .animateLink {
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);

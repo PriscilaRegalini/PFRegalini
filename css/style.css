@@ -307,7 +307,6 @@ footer ul li svg:hover {
   border: #f2cece solid 1px;
   border-radius: 7px;
   color: #747373;
-  /* line-height: $textXl; */
   padding: 8px 15px;
 }
 .aError span:hover {
@@ -464,10 +463,6 @@ footer ul li svg:hover {
   border: #f2cece solid 1px;
   border-radius: 7px;
   color: #747373;
-  /* line-height: $textXl; */
-  /* background-color:map-get($map: $colores, $key:'dos' ) ;
-  color: map-get($map: $colores, $key:'siete' );
-  border: map-get($map: $colores, $key:'uno' ) solid 1px; */
 }
 .contenedor-contacto button:hover {
   background-color: #f2cece;
