@@ -228,6 +228,7 @@ header .ilustracion img {
 
 footer {
   font-family: "Josefin Sans", sans-serif;
+  background-color: aqua;
 }
 footer img {
   margin-right: 40px;
@@ -238,6 +239,7 @@ footer img:hover {
   fill: #747373;
 }
 footer ul {
+  margin-bottom: 0px;
   background-color: #f2cece;
   display: flex;
   flex-direction: row;
