@@ -121,18 +121,21 @@ header {
 .contenedorTestimonios{
     @include contenedor($width98, auto, 0px, 0px, 0px, flex, row, center, center);
     margin-left: 3px;
+    
 
     .testimonios{
         @include contenedor($width100, auto, none, none, none, flex, column, center, center);
         background-color: map-get($map: $colores, $key:'once' );
         border-radius: 10px;
         margin-left: 20px !important;
+       
     }
         .h2Testimonios{
         @extend h2;
             font-family: $fontSecundaria;
             font-size: $textLg; 
-            margin-bottom: 15px;    
+            margin-bottom: 15px;  
+              
         }
 
     }
@@ -211,6 +214,11 @@ footer{
         justify-content: center;
         align-items: center;
         }
+        p{
+            margin-top: 20px;
+            margin-bottom: -20px;
+            line-height: $textLg;
+        }
 }
 
 .aError{
@@ -225,6 +233,7 @@ footer{
                 &:hover{
                     color: map-get($map: $colores, $key:'ocho' );
                 }
+               
                 span{
                     @include  texto($fontPrincipal, $textSxx, $fontRegular, $textXl, map-get($map: $colores, $key:'siete' ), center );
 

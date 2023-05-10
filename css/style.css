@@ -274,6 +274,11 @@ footer ul li svg:hover {
   justify-content: center;
   align-items: center;
 }
+.errorPage p {
+  margin-top: 20px;
+  margin-bottom: -20px;
+  line-height: 2em;
+}
 
 .aError {
   font-family: "Josefin Sans", sans-serif;
@@ -493,7 +498,7 @@ footer ul li svg:hover {
   list-style: none;
   padding-left: 10px;
   margin: 0;
-  animation: animateHerramientas 13s infinite;
+  animation: animateHerramientas 5s infinite;
 }
 .presentacionHerramientas .animateSobreMi .cambiar .titulo {
   font-size: 1.5em;
@@ -564,11 +569,11 @@ footer ul li svg:hover {
 
 @media (max-width: 800px) {
   .error404 {
-    width: 270px !important;
+    width: 320px !important;
     justify-content: center;
     align-items: center;
     margin-top: 0px;
-    margin-left: -10px;
+    margin-left: -25px;
   }
   .aError {
     font-family: "Josefin Sans", sans-serif;
@@ -728,7 +733,7 @@ footer ul li svg:hover {
     border: none !important;
   }
   .presentacionHerramientas .animateSobreMi {
-    width: 280px;
+    width: 290px;
     height: 60px;
     margin: auto;
     padding: 0;

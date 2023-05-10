@@ -3,11 +3,11 @@
     //ERRORES 404 403 504
 
 .error404{
-    width: 270px !important;
+    width: 320px !important;
     justify-content: center;
     align-items: center;
     margin-top: 0px;
-    margin-left: -10px;
+    margin-left: -25px;
     }
 .aError{
             
@@ -26,7 +26,7 @@
                 margin: 0px 30px;
                 margin-top: 40px;
             }
-            
+
     // GENERALES
 .grid{
     width:$width100;
@@ -140,7 +140,7 @@
             @extend .presentacion;
             border: none !important;
             .animateSobreMi{
-                @include contenedor(280px, 60px, auto, 0, 0, flex, column, none, none);
+                @include contenedor(290px, 60px, auto, 0, 0, flex, column, none, none);
                 margin-left: -10px;
                 @include texto($fontPrincipal, none, $fontRegular, $textLg,map-get($map: $colores, $key:'diez' ), none);
         
