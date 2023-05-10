@@ -15,7 +15,7 @@
             list-style: none;
             padding-left: 10px;
             margin: 0;
-            animation: animateHerramientas 15s infinite;
+            animation: animateHerramientas 13s infinite;
             .titulo{
                 font-size: $textMd;
                 font-family: $fontSecundaria;
@@ -44,21 +44,6 @@
     100%{margin-top: 0;}
 }
 
-.animateSobreMi{
-	animation-name: animateSobreMi;
-	animation-duration: 60s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-}
-
-@keyframes animateTestimonio{
-	0%{opacity:0.5}
-	25%{opacity:0.7}
-    50%{opacity:1}
-    75%{opacity:0.7}
-    100%{opacity:0.5}
-}
-
 @keyframes animateCorazon{
 	0%{width: 0px;}
     25%{opacity:1}
@@ -69,4 +54,16 @@
 	animation-name: animateCorazon;
 	animation-duration: 2s;
 	animation-timing-function: linear;
+}
+
+.animateLink {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s;
+    &:hover, a:focus {
+        background-size: 100% 1px;
+    }
 }

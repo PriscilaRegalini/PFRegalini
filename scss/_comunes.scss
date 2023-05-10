@@ -4,13 +4,13 @@ h1{
     @include  texto($fontPrincipal, $textMd, $fontLight, none,black, center );
    
     span{
-        @include  texto($fontSecundaria, $textMd,$fontBold, none,   black, center );
+        @include  texto($fontSecundaria, $textMd,$fontBold, none,black, center );
 
     }
 }
 h2{
     @include  texto($fontPrincipal, $textMd, $fontRegular, $textMd, black, center );
-    margin-top: 30px
+    margin-top: 30px;
 }
 h3{
     @include  texto($fontPrincipal, $textSm, $fontBold, none, black, none );
@@ -59,7 +59,7 @@ hr{
 }
 
 #centro{
-	grid-area: centro; 
+	grid-area: centro;
 }
 
 #presentacion{
@@ -83,6 +83,7 @@ hr{
 //HEADER
 
 header {
+   
     .presentacion{
         @include contenedor( $width100, auto, none, 30px, none, flex, column, center, center);  
 
@@ -127,27 +128,24 @@ header {
         border-radius: 10px;
         margin-left: 20px !important;
     }
-    .h2Testimonios{
+        .h2Testimonios{
         @extend h2;
-        font-family: $fontSecundaria;
-        font-size: $textLg;
-           /*  animation-name: animateTestimonio;
-            animation-duration: 4s;
-            animation-iteration-count: infinite; */     
-    }
-    .textoTestimonios{   
-        font-style: italic;
-        span{
-            font-weight: $fontLight;
+            font-family: $fontSecundaria;
+            font-size: $textLg; 
+            margin-bottom: 15px;    
         }
+
     }
-}
+
+    .textoTestimonios{
+        font-style: italic;
+        line-height: $textLg;
+    }
 
 //CURIOSIDAD
 .curiosidad{
 
     h1{
-        @extend h1;
         font-family: $fontSecundaria;
         font-size: $textLg;
     }
@@ -217,7 +215,7 @@ footer{
 }
 
 .aError{
-        @include  texto($fontPrincipal, $textMd, $fontLight, none, map-get($map: $colores, $key:'nueve' ), center );
+        @include  texto($fontPrincipal, $textMd, $fontLight, $textXl, map-get($map: $colores, $key:'nueve' ), center );
         text-decoration: none;
         cursor: pointer;
         padding: 10px;

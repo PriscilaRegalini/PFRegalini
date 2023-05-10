@@ -138,26 +138,24 @@
         .presentacionHerramientas{
             @extend .presentacion;
             border: none !important;
-        
             .animateSobreMi{
                 @include contenedor(280px, 60px, auto, 0, 0, flex, column, none, none);
-        
+                margin-left: -10px;
                 @include texto($fontPrincipal, none, $fontRegular, $textLg,map-get($map: $colores, $key:'diez' ), none);
         
                 overflow: hidden;
         
                 .cambiar{
+                   
                     list-style: none;
-                    margin-left: -40px;
+                    margin-left: -30px;
                     animation: animateHerramientas 15s infinite;
                     .titulo{
-                    
                         font-size: $textSm;
                         font-family: $fontSecundaria;
                         padding: 20px;
                     }
-                    .herramientas{
-                        
+                    .herramientas{ 
                         font-size: $textMini;
                         font-family: $fontPrincipal;
                         

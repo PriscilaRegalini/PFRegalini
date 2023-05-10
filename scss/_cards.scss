@@ -5,11 +5,12 @@
     padding-right: 55px;
 }
 
-.card{
-
+.card{ 
     width: $width100;
-
     font-family: $fontPrincipal;
+    animation-name: animateTestimonio;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 
     h3{
         @extend h3;
@@ -75,9 +76,9 @@
         border-bottom-right-radius: 7px;
         border-bottom-left-radius: 7px;
         text-align: left;
-        color: map-get($map: $colores, $key:'ocho' );
+        color: map-get($map: $colores, $key:'siete' );
         &:hover{
-            color:map-get($map: $colores, $key:'diez' );
+            color:map-get($map: $colores, $key:'nueve' );
             padding: 10px 15px;
             font-size: $textSm;
             text-decoration: none;
