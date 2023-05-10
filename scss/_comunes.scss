@@ -163,7 +163,6 @@ header {
 
 footer{
     font-family: $fontPrincipal;
-    background-color: aqua;
     img{ 
         margin-right: 40px;
         width: 30px;
@@ -198,7 +197,6 @@ footer{
                         fill:map-get($map: $colores, $key:'seis' );  
                      }
                  }
-            
         }
     }
 
