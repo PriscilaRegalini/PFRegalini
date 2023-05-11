@@ -133,11 +133,11 @@
 
     // SOBRE MI - HERRAMIENTAS
     .estudios{
-        width: $width100;
+        /* width: $width100; */
         margin-bottom: 30px;   
     }
         .presentacionHerramientas{
-            width: 300px;
+            /* width: 300px; */
             @extend .presentacion;
             border: none !important;
             .animateSobreMi{

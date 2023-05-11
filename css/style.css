@@ -726,11 +726,11 @@ footer ul li svg:hover {
     margin-bottom: 60px;
   }
   .estudios {
-    width: 100%;
+    /* width: $width100; */
     margin-bottom: 30px;
   }
   .presentacionHerramientas {
-    width: 300px;
+    /* width: 300px; */
     border: none !important;
   }
   .presentacionHerramientas .animateSobreMi {
