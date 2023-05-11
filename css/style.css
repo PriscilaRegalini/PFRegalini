@@ -726,10 +726,11 @@ footer ul li svg:hover {
     margin-bottom: 60px;
   }
   .estudios {
-    /* width: $width100; */
+    width: 100%;
     margin-bottom: 30px;
   }
   .presentacionHerramientas {
+    background-color: #bebebe;
     /* width: 300px; */
     border: none !important;
   }

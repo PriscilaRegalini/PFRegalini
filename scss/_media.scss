@@ -133,10 +133,12 @@
 
     // SOBRE MI - HERRAMIENTAS
     .estudios{
-        /* width: $width100; */
-        margin-bottom: 30px;   
+        width: $width100;
+        margin-bottom: 30px; 
+          
     }
         .presentacionHerramientas{
+            background-color: map-get($map: $colores, $key: 'trece');
             /* width: 300px; */
             @extend .presentacion;
             border: none !important;
