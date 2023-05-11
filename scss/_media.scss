@@ -139,9 +139,9 @@
     }
     .mobile{
         display:none;
-    }
-     
-        .contenedorTestimonios{
+    }    
+
+    .contenedorTestimonios{
             @include contenedor($width95, auto, 10px, 8px, 0px, flex, row, center, center);
             margin-left: 7px;
             margin-bottom: 20px;}
