@@ -730,6 +730,7 @@ footer ul li svg:hover {
     margin-bottom: 30px;
   }
   .presentacionHerramientas {
+    width: 300px;
     border: none !important;
   }
   .presentacionHerramientas .animateSobreMi {
@@ -741,16 +742,16 @@ footer ul li svg:hover {
     display: flex;
     flex-direction: column;
     justify-content: none;
-    margin-left: -10px;
+    margin-left: 0px;
     font-family: "Josefin Sans", sans-serif;
     font-size: none;
     font-weight: 400;
     line-height: none;
     color: black;
     text-align: none;
-    overflow: hidden;
   }
   .presentacionHerramientas .animateSobreMi .cambiar {
+    height: 400px;
     list-style: none;
     margin-left: -30px;
     animation: animateHerramientas 15s infinite;
