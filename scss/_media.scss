@@ -137,73 +137,14 @@
         margin-bottom: 30px; 
           
     }
-        .presentacionHerramientas{
-            background-color: map-get($map: $colores, $key: 'trece');
-            /* width: 300px; */
-            @extend .presentacion;
-            border: none !important;
-            .animateSobreMi{
-
-                @include contenedor(290px, 60px, auto, 0, 0, flex, column, none, none);
-                margin-left: 0px;
-                @include texto($fontPrincipal, none, $fontRegular, $textLg,map-get($map: $colores, $key:'diez' ), none);
-        
-                .cambiar{
-                   height: 400px;
-                    list-style: none;
-                    margin-left: -30px;
-                    animation: animateHerramientas 15s infinite;
-                    .titulo{
-                        font-size: $textSm;
-                        font-family: $fontSecundaria;
-                        padding: 20px;
-                    }
-                    .herramientas{ 
-                        font-size: $textMini;
-                        font-family: $fontPrincipal;
-                        
-                    }
-                }
-            }
-        }
+    .mobile{
+        display:none;
+    }
+     
         .contenedorTestimonios{
             @include contenedor($width95, auto, 10px, 8px, 0px, flex, row, center, center);
             margin-left: 7px;
             margin-bottom: 20px;}
-
-        //ANIMACION
-        @keyframes animateHerramientas{
-            0%{margin-top: 10px;}
-            20%{margin-top: 0;}
-        
-            25%{margin-top: -63px;}
-            50%{margin-top: -63px;}
-        
-            55%{margin-top: -120px;}
-            80%{margin-top: -120px;}
-        
-            85%{margin-top: -63px;}
-            95%{margin-top: -63px;}
-        
-            100%{margin-top: 0;}
-        }
-        
-        .animateSobreMi{
-            animation-name: animateSobreMi;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        .herramientas{
-   
-            width: $width97 !important;
-            border-radius: 10px;
-          
-            svg{
-                width: 6%;
-                margin: 21px !important;
-            }
-         }
     }
 
 footer{

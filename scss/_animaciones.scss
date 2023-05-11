@@ -3,30 +3,32 @@
 .presentacionHerramientas{
     @extend .presentacion;
     border: none !important;
+}
 
-    .animateSobreMi{
-        @include contenedor(500px, 50px, auto, 0, 0, flex, column, none, none);
+.animateSobreMi{
+    @include contenedor(500px, 50px, auto, 0, 0, flex, column, none, none);
 
-        @include texto($fontPrincipal, $textMd, $fontRegular, $textLg,black, none);
+    @include texto($fontPrincipal, $textMd, $fontRegular, $textXl,black, none);
 
-        overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
-        .cambiar{
-            list-style: none;
-            padding-left: 10px;
-            margin: 0;
-            animation: animateHerramientas 5s infinite;
-            .titulo{
-                font-size: $textMd;
-                font-family: $fontSecundaria;
-            }
-            .herramientas{
-                font-family: $fontPrincipal;
-                padding: 10px;
-            }
+    .cambiar{
+        text-align: center;
+        line-height: $textLg;       
+        list-style: none;
+        margin: 0;
+        animation: animateHerramientas 10s infinite;
+        .titulo{
+            font-size: $textMd;
+            font-family: $fontSecundaria;
+        }
+        .herramientas{
+            font-family: $fontPrincipal;
         }
     }
 }
+
 
 @keyframes animateHerramientas{
 	0%{margin-top: 10px;}
@@ -43,6 +45,7 @@
 
     100%{margin-top: 0;}
 }
+
 //ANIMACIÓN CURIOSIDAD -  CORAZÓN
 @keyframes animateCorazon{
 	0%{width: 0px;}
