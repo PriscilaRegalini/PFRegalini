@@ -144,6 +144,28 @@ header {
         line-height: $textLg;
     }
 
+
+.presentacionCualidades{
+    @extend .presentacion;
+   
+    border: none !important;
+    background-color: map-get($map:$colores , $key:'once' );
+    .titulo{
+        margin-top: -5px;
+        font-family: $fontSecundaria;
+        font-size: $textLg;
+    }
+    .cualidades{
+        font-weight: $fontRegular;
+        font-size: $textSm;
+        line-height: $textMd;
+    }
+}
+
+.web{
+    display: none;
+}
+
 //CURIOSIDAD
 .curiosidad{
 

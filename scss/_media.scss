@@ -138,7 +138,10 @@
     }
     .mobile{
         display:none;
-    }    
+    }  
+    .web{
+        display: flex;
+    }  
 
     .contenedorTestimonios{
             @include contenedor($width95, auto, 10px, 8px, 0px, flex, row, center, center);
@@ -176,4 +179,12 @@ footer{
         margin-left: 24px !important;
         margin-bottom: 50px;
     }
+
+    //SOBRE MI
+    .mobile{
+        display:none;
+    }  
+    .web{
+        display: flex;
+    } 
 }

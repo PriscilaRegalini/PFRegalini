@@ -138,7 +138,7 @@ hr {
   grid-template-areas: "botonera botonera botonera" ". presentacion ." "centro centro centro" "pie pie pie";
 }
 
-header .presentacion, header .presentacionHerramientas, header .errorPage {
+header .presentacion, header .presentacionHerramientas, header .errorPage, header .presentacionCualidades {
   width: 100%;
   height: auto;
   margin: none;
@@ -212,6 +212,25 @@ header .ilustracion img {
 .textoTestimonios {
   font-style: italic;
   line-height: 2em;
+}
+
+.presentacionCualidades {
+  border: none !important;
+  background-color: #c9dcfa;
+}
+.presentacionCualidades .titulo {
+  margin-top: -5px;
+  font-family: "Delicious Handrawn", sans-serif;
+  font-size: 2em;
+}
+.presentacionCualidades .cualidades {
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.web {
+  display: none;
 }
 
 .curiosidad h1 {
@@ -734,6 +753,9 @@ footer ul li svg:hover {
   .mobile {
     display: none;
   }
+  .web {
+    display: flex;
+  }
   .contenedorTestimonios {
     width: 95%;
     height: auto;
@@ -779,6 +801,12 @@ footer {
     width: 90%;
     margin-left: 24px !important;
     margin-bottom: 50px;
+  }
+  .mobile {
+    display: none;
+  }
+  .web {
+    display: flex;
   }
 }
 
