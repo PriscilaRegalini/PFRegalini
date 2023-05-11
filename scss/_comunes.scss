@@ -135,13 +135,27 @@ header {
             font-family: $fontSecundaria;
             font-size: $textLg; 
             margin-bottom: 15px; 
+            border-top-left-radius:  10px;
+            border-top-right-radius:  10px;
         }
-
+        .icon{
+            margin-bottom: 30px;
+            background-color: map-get($map: $colores, $key:'trece' );
+            border-radius: 25px;
+            padding: 7px;
+            
+        }
+        .icono{
+         
+            margin-top: 10px;
+            margin-bottom: -30px;
+        }
     }
 
     .textoTestimonios{
         font-style: italic;
         line-height: $textLg;
+        margin-top: 20px;
     }
 
 

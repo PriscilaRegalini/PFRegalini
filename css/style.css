@@ -207,11 +207,24 @@ header .ilustracion img {
   font-family: "Delicious Handrawn", sans-serif;
   font-size: 2em;
   margin-bottom: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.contenedorTestimonios .icon {
+  margin-bottom: 30px;
+  background-color: #dbe8fc;
+  border-radius: 25px;
+  padding: 7px;
+}
+.contenedorTestimonios .icono {
+  margin-top: 10px;
+  margin-bottom: -30px;
 }
 
 .textoTestimonios {
   font-style: italic;
   line-height: 2em;
+  margin-top: 20px;
 }
 
 .presentacionCualidades {
