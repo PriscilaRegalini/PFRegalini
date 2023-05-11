@@ -570,35 +570,6 @@ footer ul li svg:hover {
 }
 
 @media (max-width: 800px) {
-  .error404 {
-    width: 320px !important;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-    margin-left: -25px;
-  }
-  .aError {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.2em;
-    font-weight: 100;
-    line-height: 1.2em;
-    color: black;
-    text-align: center;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 30px;
-  }
-  .aError svg {
-    margin-bottom: 16px;
-  }
-  .aError:hover {
-    color: #585859;
-  }
-  hr {
-    margin: 0px 30px;
-    margin-top: 40px;
-  }
   .grid {
     width: 100%;
     display: grid;
@@ -629,6 +600,35 @@ footer ul li svg:hover {
     display: flex;
     flex-direction: column;
     justify-content: none;
+  }
+  .error404 {
+    width: 320px !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: -25px;
+  }
+  .aError {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 100;
+    line-height: 1.2em;
+    color: black;
+    text-align: center;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  .aError svg {
+    margin-bottom: 16px;
+  }
+  .aError:hover {
+    color: #585859;
+  }
+  hr {
+    margin: 0px 30px;
+    margin-top: 40px;
   }
   .corazonNav {
     margin-left: -15px;

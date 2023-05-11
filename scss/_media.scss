@@ -1,31 +1,5 @@
 
 @media (max-width: 800px){
-    //ERRORES 404 403 504
-
-.error404{
-    width: 320px !important;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-    margin-left: -25px;
-    }
-.aError{
-            
-        @include  texto($fontPrincipal, $textSm, $fontLight, none,black, center );
-        text-decoration: none;
-        cursor: pointer;
-                margin-top: 30px;
-                svg{
-                    margin-bottom: 16px;
-                }
-                &:hover{
-                    color: map-get($map: $colores, $key:'ocho' );
-                }
-            }
-            hr{
-                margin: 0px 30px;
-                margin-top: 40px;
-            }
 
     // GENERALES
 .grid{
@@ -52,7 +26,32 @@
     } 
 }
 
-    
+     //ERRORES 404 403 504
+
+.error404{
+    width: 320px !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: -25px;
+    }
+.aError{
+            
+        @include  texto($fontPrincipal, $textSm, $fontLight, none,black, center );
+        text-decoration: none;
+        cursor: pointer;
+                margin-top: 30px;
+                svg{
+                    margin-bottom: 16px;
+                }
+                &:hover{
+                    color: map-get($map: $colores, $key:'ocho' );
+                }
+            }
+            hr{
+                margin: 0px 30px;
+                margin-top: 40px;
+            }
     //INDEX
     .corazonNav{
         margin-left: -15px;
@@ -150,6 +149,7 @@
 footer{
     margin-top: 30px;
 }
+
 
 
     //MEDIAS PARA RETOQUES
