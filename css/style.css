@@ -217,7 +217,7 @@ header .ilustracion img {
   padding: 7px;
 }
 .contenedorTestimonios .icono {
-  margin-top: 10px;
+  margin-top: 40px;
   margin-bottom: -30px;
 }
 
@@ -820,6 +820,10 @@ footer {
   }
   .web {
     display: flex;
+  }
+  .icono {
+    margin-top: 10px !important;
+    margin-bottom: -30px;
   }
 }
 
