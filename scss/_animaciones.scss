@@ -6,7 +6,6 @@
 }
 
 .animateSobreMi{
-    overflow-y: hidden;
     @include contenedor(500px, 50px, auto, 0, 0, flex, column, none, none);
 
     @include texto($fontPrincipal, $textMd, $fontRegular, $textXl,black, none);
@@ -15,19 +14,16 @@
     margin-bottom: 30px;
 
     .cambiar{
-        overflow-y: hidden;
         text-align: center;
         line-height: $textLg;       
         list-style: none;
         margin: 0;
         animation: animateHerramientas 10s infinite;
         .titulo{
-            overflow-y: hidden;
             font-size: $textMd;
             font-family: $fontSecundaria;
         }
         .herramientas{
-            overflow-y: hidden;
             font-family: $fontPrincipal;
         }
     }
