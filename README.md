@@ -7,19 +7,18 @@
 
 
 <p>Este <strong>Repo</strong> es mi proyecto final para el curso de <strong> Desarrollo Web - CODERHOUSE </strong></p>
-<p>Para llegar hasta aquí tuve que pasar por un proceso de aprendizaje (principalmente), creatividad, mucho "prueba y error" y horas  silla :nerd_face: . </p>
 
 Qué puedo decir que me deja este curso?, a parte del contenido muy bien presentado y enseñado: Todo se resume en estudiar, practicar, probar, investigar y ponerle muchas ganas :grin: .
 
-<p>Luego de desarrollar una idea en la primer entrega del curso, decidí cambiar y realizar <strong>"Mi Portfolio"</strong> (el cual no tenía) y éste terminó siendo el proyecto que continué desarrollando a lo largo de la cursada. </p>
-
-<p>Feliz de los resultados paso a mostrar el desarrollo del proyecto</p>
+<p>A continuación, el desarrollo del proyecto...</p>
 
 ***
  <p align="center"> <img alt="imagen del index del proyecto Priscila" src="img/readme/index.png" width="600px"/></p>
  <p align="center"> Pantalla de inicio del proyecto</p>
  
  ***
+ 
+ <h2>  :nerd_face: HERRAMIENTAS</h2>
 
 <h3>Herramientas que manejaba previamente y fueron utilizadas en este proyecto</h3>
 
@@ -47,8 +46,8 @@ Qué puedo decir que me deja este curso?, a parte del contenido muy bien present
 
 ***
 
-  ## :rocket: WEB :rocket: ##
-  ### El contenido de la Web: ###
+  <h2> :rocket: WEB :rocket: </h2>
+  <h3> Contenido de la Web: </h3>
   <p>Consiste en una web de 5 html principales, más las páginas de error.</p>
   <ul>
     <li>Index: Home del Sitio Web donde muestro mis últimos trabajos realizados y una sección de Testimonios.</li>
@@ -56,9 +55,9 @@ Qué puedo decir que me deja este curso?, a parte del contenido muy bien present
     <li>Sobre Mí: Sección donde se pueden ver mis estudios realizados, herramientas que utilizo y algunas de mis cualidades.</li>
     <li>Curiosidad: Sección donde cuento la historia del isotipo de la web.</li>
     <li>Contacto: Formulario para poder contactarse.</li>
-    <li>Error403: Página de ejemplo de un error 403</li>
-    <li>Error404: Página de ejemplo de un error 404</li>
-    <li>Error504: Página de ejemplo de un error 504</li>
+    <li>Error403: Página de error 403, que se puede acceder desde el link de veo.com o en su imagen.</li>
+    <li>Error404: Página de error 404,que se puede acceder desde el Título "Ilustración" o en su imagen. </li>
+    <li>Error504: Página de error 504, que se puede acceder desde el botón "enviar" del formulario de contacto.</li>
   </ul>
 
 ***
@@ -68,7 +67,7 @@ Qué puedo decir que me deja este curso?, a parte del contenido muy bien present
 <ul>
   <li>Usar cards de BS ("index.html") y tratar de replicarlas de manera casera ("trabajos.html "de portfolio).</li>
   <li>Realizar las pantallas de error totalmente personalizadas y caseras.</li>
-  <li>Implementar todo lo posible lo aprendido a lo largo de la cursada, sin perder la idea del proyecto y su diseño. Dejar a la  vista el manejo de los lenguajes y herramientas aprendidas.</li>
+  <li>Implementar todo lo posible lo aprendido a lo largo de la cursada, sin perder la idea del proyecto y su diseño. Dejar a la  vista el manejo de los lenguajes y las herramientas que aprendí a utilizar.</li>
 </ul>
 
 <p>Estoy contenta con los resultados. Creo haber podido cumplir con las metas que me propuse y eso me anima a seguir avanzando.</p>
@@ -113,5 +112,3 @@ Qué puedo decir que me deja este curso?, a parte del contenido muy bien present
 ***
 
 <p>Gracias por leer este readme!, fue hecho con muchas ganas al igual que este proyecto. Que tengas un buen día :grin: </p>
-
-
